@@ -28,7 +28,7 @@ specialized function within the hippocampal circuitry by allowing them to regula
 and indirect signaling pathways within the hippocampus.
 
 ------------------------------------------------
-This model can be auto-launched from modeldb or run by starting the mosinit.hoc with:
+This model can run by starting the mosinit.hoc with:
 nrngui mosinit.hoc
 or double clicking on the mosinit.hoc file 
 after the mod files have been compiled (nrnivmodl compiles in unix, mknrndll in mswin, mac)
