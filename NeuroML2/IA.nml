@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="Golgi_KC">
+
+    <notes>ChannelML file containing a single Channel description from Saraga et al 2003</notes>
+
+    <ionChannel id="OLM_IA" conductance="165pS" type="ionChannelHH" species="k">
+        
+        <gateHHrates id="a" instances="1">
+            <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
+            <forwardRate type="HHExpLinearRate" rate="1per_ms" midpoint="-38mV" scale="10mV"/>
+            <reverseRate type="HHExpRate" rate="4per_ms" midpoint="-65mV" scale="-18mV"/>
+        </gateHHrates>
+    
+        <gateHHrates id="b" instances="1">
+            <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
+            <forwardRate type="HH1perExpRate" rate="0.000009per_ms" midpoint="-26mV" scale="18.5mV"/>
+            <reverseRate type="HHSigmoidLikeRate" rate="0.014per_ms" midpoint="-70mV" scale="-11mV"/>
+        </gateHHrates>
+                            
+    </ionChannel>
+    
+    
+    <ComponentType name="HH1perExpRate"
+                   extends="baseHHRate"
+                   description="1/Exponential rate to describe IA in Saraga 2003)">
+
+        <Dynamics>         
+            <DerivedVariable name="r" exposure="r" value="rate / (exp((v - midpoint)/scale))" dimension="per_time"/>
+        </Dynamics>
+
+    </ComponentType>
+    
+    
+    <ComponentType name="HHSigmoidLikeRate"
+                   extends="baseHHRate"
+                   description="sigmoid like rate to describe IA in Saraga 2003)">
+
+        <Dynamics>         
+            <DerivedVariable name="r" exposure="r" value="rate / (0.2 + exp((v - midpoint)/scale))" dimension="per_time"/>
+        </Dynamics>
+
+    </ComponentType>
+
+</neuroml>

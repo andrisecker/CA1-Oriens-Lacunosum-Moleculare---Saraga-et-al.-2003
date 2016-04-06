@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="Golgi_KC">
+
+    <notes>ChannelML file containing a single Channel description from Saraga et al 2003</notes>
+
+    <ionChannel id="OLM_Kdend" conductance="230pS" type="ionChannelHH" species="k">
+        
+        <gateHHrates id="n" instances="4">
+            <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
+            <forwardRate type="HHDoubleScaledExpLinearRate" rate="1per_ms" midpoint="-20mV" scale1="180mV" scale2="21"/>
+            <reverseRate type="HHDoubleScaledExpLinearRate" rate="1per_ms" midpoint="-30mV" scale1="3600mV" scale2="12"/>
+        </gateHHrates>
+                            
+    </ionChannel>
+    
+    <ComponentType name="HHDoubleScaledExpLinearRate"
+                   extends="baseVoltageDepRate"
+                   description="Exponential linear form for variable equation (originally developed to describe some of the channel rates in WangBuzsáki1996)">
+        
+        <Parameter name="rate" dimension="per_time"/>
+        <Parameter name="midpoint" dimension="voltage"/>
+        <Parameter name="scale1" dimension="voltage"/>
+        <Parameter name="scale2" dimension="voltage"/>
+
+        <Dynamics>         
+            <DerivedVariable name="tmp" value="(v - midpoint)/scale2" dimension="none"/>
+
+            <ConditionalDerivedVariable name="r" exposure="r" dimension="per_time">
+                <Case condition="tmp .neq. 0" value="rate * ((v - midpoint)/scale1) / (1 - exp(0 - tmp))"/>
+                <Case condition="tmp .eq. 0" value="rate"/>
+            </ConditionalDerivedVariable>
+        </Dynamics>
+
+    </ComponentType>
+
+</neuroml>
