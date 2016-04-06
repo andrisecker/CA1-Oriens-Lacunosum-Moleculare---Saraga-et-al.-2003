@@ -8,18 +8,18 @@
         <gateHHtauInf id="a" instances="1" rate="1per_ms" midpoint="-14mV" scale="-16.6mV" tau_fix="5ms">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
             <timeCoure type="fixedTimeCourse" tau="5ms"/>
-            <steadyState />
+            <steadyState type="HHsigmoid" rate="1per_ms" midpoint="-14mV" scale="16.6mV"/>
         </gateHHtauInf>
     
         <gateHHrates id="b" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
-            <forwardRate type="HH1perExpRate" rate="0.000009per_ms" midpoint="-26mV" scale="18.5mV"/>
-            <reverseRate type="HHSigmoidLikeRate" rate="0.014per_ms" midpoint="-70mV" scale="-11mV"/>
+            <forwardRate type="Saraga2003_IA_alpha" rate="0.000009per_ms" midpoint="-26mV" scale="18.5mV"/>
+            <reverseRate type="Saraga2003_IA_beta" rate="0.014per_ms" midpoint="-70mV" scale="-11mV"/>
         </gateHHrates>
                             
     </ionChannel>
     
-    <ComponentType name="HH1perExpRate"
+    <ComponentType name="Saraga2003_IA_alpha"
                    extends="baseHHRate"
                    description="1/Exponential rate to describe IA in Saraga 2003)">
 
@@ -28,9 +28,8 @@
         </Dynamics>
 
     </ComponentType>
-    
-    
-    <ComponentType name="HHSigmoidLikeRate"
+       
+    <ComponentType name="Saraga2003_IA_beta"
                    extends="baseHHRate"
                    description="sigmoid like rate to describe IA in Saraga 2003)">
 

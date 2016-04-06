@@ -7,10 +7,22 @@
         
         <gateHHtauInf id="r" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
-            <timeCourse />
-            <steadyState />
+            <timeCourse type="Saraga2003_Ih_tau"/>
+            <steadyState type="HHsigmoid" rate="1per_ms" midpoint="-84mV" scale="-10.2mV"/>
         </gateHHtauInf>
     
     </ionChannel>
+    
+    
+    <ComponentType name="Saraga2003_Ih_tau" extends="baseVoltageDepTime">
+        <Constant name="TIME_SCALE" dimension="time" value="1 ms"/>
+        <Constant name="VOLT_SCALE" dimension="voltage" value="1 mV"/>
+
+        <Dynamics>
+            <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>
+            <DerivedVariable name="t" exposure="t" dimension="time" value="(100 + (1 / (exp(-17.9 - 0.116*V) + exp(-1.84 + 0.09*V)))) * TIME_SCALE"/>
+        </Dynamics>
+
+    </ComponentType>
 
 </neuroml>

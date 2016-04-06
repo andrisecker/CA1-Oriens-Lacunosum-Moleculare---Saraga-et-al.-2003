@@ -7,8 +7,8 @@
         
         <gateHHrates id="n" instances="4">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
-            <forwardRate type="HHDoubleScaledExpLinearRate" rate="1per_ms" midpoint="-25mV" scale1="180mV" scale2="25"/>
-            <reverseRate type="HHDoubleScaledExpLinearRate" rate="1per_ms" midpoint="-35mV" scale1="3600mV" scale2="12"/>
+            <forwardRate type="HHDoubleScaledExpLinearRate" rate="1per_ms" midpoint="-25mV" scale1="55.55mV" scale2="25mV"/>
+            <reverseRate type="HHDoubleScaledExpLinearRate" rate="1per_ms" midpoint="-35mV" scale1="-277.77mV" scale2="12mV"/>
         </gateHHrates>
                             
     </ionChannel>
