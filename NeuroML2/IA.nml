@@ -5,11 +5,11 @@
 
     <ionChannel id="OLM_IA" conductance="165pS" type="ionChannelHH" species="k">
         
-        <gateHHrates id="a" instances="1">
+        <gateHHtauInf id="a" instances="1" rate="1per_ms" midpoint="-14mV" scale="-16.6mV" tau_fix="5ms">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
-            <forwardRate type="HHExpLinearRate" rate="1per_ms" midpoint="-38mV" scale="10mV"/>
-            <reverseRate type="HHExpRate" rate="4per_ms" midpoint="-65mV" scale="-18mV"/>
-        </gateHHrates>
+            <timeCoure type="fixedTimeCourse" tau="5ms"/>
+            <steadyState />
+        </gateHHtauInf>
     
         <gateHHrates id="b" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
@@ -18,7 +18,6 @@
         </gateHHrates>
                             
     </ionChannel>
-    
     
     <ComponentType name="HH1perExpRate"
                    extends="baseHHRate"
