@@ -7,30 +7,10 @@
         
         <gateHHrates id="n" instances="4">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
-            <forwardRate type="HHDoubleScaledExpLinearRate" rate="1per_ms" midpoint="-25mV" scale1="55.55mV" scale2="25mV"/>
-            <reverseRate type="HHDoubleScaledExpLinearRate" rate="1per_ms" midpoint="-35mV" scale1="-277.77mV" scale2="12mV"/>
+            <forwardRate type="HHExpLinearRate" rate="0.45per_ms" midpoint="-25mV" scale="25mV"/>
+            <reverseRate type="HHExpLinearRate" rate="0.0432per_ms" midpoint="-35mV" scale="-12mV"/>
         </gateHHrates>
                             
     </ionChannel>
-    
-    <ComponentType name="HHDoubleScaledExpLinearRate"
-                   extends="baseVoltageDepRate"
-                   description="Exponential linear form for variable equation (originally developed to describe some of the channel rates in WangBuzsáki1996)">
-        
-        <Parameter name="rate" dimension="per_time"/>
-        <Parameter name="midpoint" dimension="voltage"/>
-        <Parameter name="scale1" dimension="voltage"/>
-        <Parameter name="scale2" dimension="voltage"/>
-
-        <Dynamics>         
-            <DerivedVariable name="tmp" value="(v - midpoint)/scale2" dimension="none"/>
-
-            <ConditionalDerivedVariable name="r" exposure="r" dimension="per_time">
-                <Case condition="tmp .neq. 0" value="rate * ((v - midpoint)/scale1) / (1 - exp(0 - tmp))"/>
-                <Case condition="tmp .eq. 0" value="rate"/>
-            </ConditionalDerivedVariable>
-        </Dynamics>
-
-    </ComponentType>
 
 </neuroml>

@@ -5,36 +5,45 @@
 
     <ionChannel id="OLM_IA" conductance="165pS" type="ionChannelHH" species="k">
         
-        <gateHHtauInf id="a" instances="1" rate="1per_ms" midpoint="-14mV" scale="-16.6mV" tau_fix="5ms">
+        <gateHHtauInf id="a" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
             <timeCoure type="fixedTimeCourse" tau="5ms"/>
-            <steadyState type="HHsigmoid" rate="1per_ms" midpoint="-14mV" scale="16.6mV"/>
+            <steadyState type="HHSigmoidRate" rate="1" midpoint="-0.014V" scale="0.0166mV"/>
         </gateHHtauInf>
     
         <gateHHrates id="b" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
-            <forwardRate type="Saraga2003_IA_alpha" rate="0.000009per_ms" midpoint="-26mV" scale="18.5mV"/>
-            <reverseRate type="Saraga2003_IA_beta" rate="0.014per_ms" midpoint="-70mV" scale="-11mV"/>
+            <forwardRate type="Saraga2003_IA_alpha_rate"/>
+            <reverseRate type="Saraga2003_IA_beta_rate"/>
         </gateHHrates>
                             
     </ionChannel>
     
-    <ComponentType name="Saraga2003_IA_alpha"
+    
+    <ComponentType name="Saraga2003_IA_alpha_rate"
                    extends="baseHHRate"
-                   description="1/Exponential rate to describe IA in Saraga 2003)">
+                   description="1/Exponential rate to describe IA in Saraga 2003">
 
-        <Dynamics>         
-            <DerivedVariable name="r" exposure="r" value="rate / (exp((v - midpoint)/scale))" dimension="per_time"/>
+        <Constant name="TIME_SCALE" dimension="time" value="1 ms"/>
+        <Constant name="VOLT_SCALE" dimension="voltage" value="1 mV"/>
+        
+        <Dynamics>
+            <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>       
+            <DerivedVariable name="r" exposure="r" value="(0.000009 / (exp((V - 26)/18.5))) / TIME_SCALE" dimension="per_time"/>
         </Dynamics>
 
     </ComponentType>
        
-    <ComponentType name="Saraga2003_IA_beta"
+    <ComponentType name="Saraga2003_IA_beta_rate"
                    extends="baseHHRate"
-                   description="sigmoid like rate to describe IA in Saraga 2003)">
+                   description="sigmoid like rate to describe IA in Saraga 2003">
 
-        <Dynamics>         
-            <DerivedVariable name="r" exposure="r" value="rate / (0.2 + exp((v - midpoint)/scale))" dimension="per_time"/>
+        <Constant name="TIME_SCALE" dimension="time" value="1 ms"/>
+        <Constant name="VOLT_SCALE" dimension="voltage" value="1 mV"/>
+        
+        <Dynamics>
+            <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>       
+            <DerivedVariable name="r" exposure="r" value="(0.014 / (0.2 + exp((V + 70)/11))) / TIME_SCALE" dimension="per_time"/>
         </Dynamics>
 
     </ComponentType>
