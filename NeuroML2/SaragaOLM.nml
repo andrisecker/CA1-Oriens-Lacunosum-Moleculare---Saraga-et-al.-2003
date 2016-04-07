@@ -1,0 +1,86 @@
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta2.xsd" 
+         id="olm1">
+    
+    <Include file="Nasoma.nml"/>
+    <Include file="Nadend.nml"/>
+    <Include file="Ksoma.nml"/>
+    <Include file="Kdend.nml"/>
+    <Include file="IA.nml"/>
+    <Include file="Ih.nml"/>
+    
+    <Include file="OLM_Fig9BCase2_morph.cell.nml"/>
+    
+<!-- Additional leak channel-->
+    
+    <ionChannelHH id="OLM_leak" conductance="0.1nS" />
+
+<!-- Cellular properties -->
+
+    <cell id="olm1">
+
+        <morphology id="just_a_cylinder">
+
+            <segment id="0" name="Soma">
+                <proximal x="0.0" y="0.0" z="0.0" diameter="10.0"/>
+                <distal x="0.0" y="0.0" z="3.1831" diameter="10.0"/>
+            </segment>
+
+            <segmentGroup id="soma_group">
+                <member segment="0"/>
+            </segmentGroup>
+
+        </morphology>
+
+
+        <biophysicalProperties id="biophys">
+
+            <membraneProperties>
+
+                <channelDensity condDensity="107pS_per_um2" id="Nasoma" ionChannel="OLM_Nasoma" erev="90.0 mV" ion="na"/>
+                <channelDensity condDensity="117mS_per_um2" id="Nadend" ionChannel="OLM_Nadend" erev="90.0 mV" ion="na"/>
+                <channelDensity condDensity="319pS_per_um2" id="Ksoma" ionChannel="OLM_Ksoma" erev="-100.0 mV" ion="k"/>
+                <channelDensity condDensity="230pS_per_um2" id="Kdend" ionChannel="OLM_Kdend" erev="-100.0 mV" ion="k"/>
+                <channelDensity condDensity="165pS_per_um2" id="IA" ionChannel="OLM_IA" erev="-100.0 mV" ion="k"/>
+                <channelDensity condDensity="13.58pS_per_um2" id="Ih" ionChannel="OLM_Ih" erev="-32.9 mV" ion="non_specific"/>
+                <channelDensity condDensity="50mS_per_um2" id="leak" ionChannel="OLM_leak" erev="-70 mV" ion="non_specific"/>
+
+                <spikeThresh value="0 mV"/>
+                <specificCapacitance value="1.3 uF_per_cm2"/>
+                <initMembPotential value="-60.0 mV"/>
+
+            </membraneProperties>
+
+            <intracellularProperties>
+
+                <resistivity value="150 ohm_cm"/>
+
+            </intracellularProperties>
+
+        </biophysicalProperties>
+
+    </cell>
+
+<!-- Point process: Current clamp -->
+     
+    <pulseGenerator id="IClamp" delay="0ms" duration="100ms" amplitude="2pA" />
+
+<!-- Create a single-cell network -->
+
+    <network id="net" type="networkWithTemperature" temperature = "24 degC">
+        <population id="pop" component="olm1" type="populationList" size="1">
+            <instance id="0">
+                <location x="0" y="0" z="0"/>
+            </instance>
+        </population>
+
+        <!--
+        <inputList id="IClamp" component="IClamp" population="pop">
+            <input id="0" target="../pop/0/olm1" destination="synapses"/>
+        </inputList>
+        -->
+
+    </network>
+
+</neuroml>
