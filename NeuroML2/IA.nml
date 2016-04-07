@@ -7,8 +7,8 @@
         
         <gateHHtauInf id="a" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
-            <timeCoure type="fixedTimeCourse" tau="5ms"/>
-            <steadyState type="HHSigmoidRate" rate="1" midpoint="-0.014V" scale="0.0166mV"/>
+            <timeCourse type="fixedTimeCourse" tau="5ms"/>
+            <steadyState type="HHSigmoidVariable" rate="1" midpoint="-0.014V" scale="0.0166V"/>
         </gateHHtauInf>
     
         <gateHHrates id="b" instances="1">
@@ -21,7 +21,7 @@
     
     
     <ComponentType name="Saraga2003_IA_alpha_rate"
-                   extends="baseHHRate"
+                   extends="baseVoltageDepRate"
                    description="1/Exponential rate to describe IA in Saraga 2003">
 
         <Constant name="TIME_SCALE" dimension="time" value="1 ms"/>
@@ -29,13 +29,13 @@
         
         <Dynamics>
             <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>       
-            <DerivedVariable name="r" exposure="r" value="(0.000009 / (exp((V - 26)/18.5))) / TIME_SCALE" dimension="per_time"/>
+            <DerivedVariable name="r" exposure="r" dimension="per_time" value="(0.000009 / (exp((V - 26)/18.5))) / TIME_SCALE"/>
         </Dynamics>
 
     </ComponentType>
        
     <ComponentType name="Saraga2003_IA_beta_rate"
-                   extends="baseHHRate"
+                   extends="baseVoltageDepRate"
                    description="sigmoid like rate to describe IA in Saraga 2003">
 
         <Constant name="TIME_SCALE" dimension="time" value="1 ms"/>
@@ -43,7 +43,7 @@
         
         <Dynamics>
             <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>       
-            <DerivedVariable name="r" exposure="r" value="(0.014 / (0.2 + exp((V + 70)/11))) / TIME_SCALE" dimension="per_time"/>
+            <DerivedVariable name="r" exposure="r"  dimension="per_time" value="(0.014 / (0.2 + exp(-(V + 70)/11))) / TIME_SCALE"/>
         </Dynamics>
 
     </ComponentType>
