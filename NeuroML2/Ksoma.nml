@@ -7,8 +7,8 @@
         
         <gateHHrates id="n" instances="4">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
-            <forwardRate type="Saraga2003_IK_rate" rate="0.45per_ms" midpoint="-25mV" scale="25mV"/>
-            <reverseRate type="Saraga2003_IK_rate" rate="0.0432per_ms" midpoint="-35mV" scale="-12mV"/>
+            <forwardRate type="Saraga2003_IK_rate" rate="0.45per_ms" midpoint="25mV" scale="25mV"/>
+            <reverseRate type="Saraga2003_IK_rate" rate="0.0432per_ms" midpoint="35mV" scale="-12mV"/>
         </gateHHrates>
                             
     </ionChannel>
@@ -18,7 +18,7 @@
                    description="conditional ExpLinearRate to describe IK in Saraga 2003">
 
         <Dynamics>         
-            <DerivedVariable name="tmp" value="(v + midpoint)/scale" dimension="none"/>
+            <DerivedVariable name="tmp" value="(v - midpoint)/scale" dimension="none"/>
             
             <ConditionalDerivedVariable name="exp_tmp" dimension="none">
                 <Case condition="-tmp .lt. -100" value="0"/>
