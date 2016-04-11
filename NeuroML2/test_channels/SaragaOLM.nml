@@ -35,10 +35,10 @@
             <membraneProperties>
                 <channelDensity condDensity="0.05mS_per_cm2" id="passive" ionChannel="leak" erev="-70 mV" ion="non_specific"/>
                 <!-- 1 pS_per_um2 = 0.1 mS_per_cm2 -->
-                <channelDensity condDensity="0mS_per_cm2" id="Nasoma" ionChannel="OLM_Nasoma" erev="90.0 mV" ion="na"/> <!-- 10.7 -->
-                <channelDensity condDensity="0mS_per_cm2" id="Ksoma" ionChannel="OLM_Ksoma" erev="-100.0 mV" ion="k"/> <!-- 31.9 -->
-                <channelDensity condDensity="0mS_per_cm2" id="IA" ionChannel="OLM_IA" erev="-90.0 mV" ion="k"/> <!-- 16.5 -->
-                <channelDensity condDensity="1.358mS_per_cm2" id="Ih" ionChannel="OLM_Ih" erev="-32.9 mV" ion="h"/> <!-- 1.358 -->
+                <channelDensity condDensity="10.7mS_per_cm2" id="Nasoma" ionChannel="OLM_Nasoma" erev="90.0 mV" ion="na"/> <!-- 10.7 -->
+                <channelDensity condDensity="31.9mS_per_cm2" id="Ksoma" ionChannel="OLM_Ksoma" erev="-100.0 mV" ion="k"/> <!-- 31.9 -->
+                <channelDensity condDensity="0mS_per_cm2" id="IA" ionChannel="OLM_IA" erev="-100.0 mV" ion="k"/> <!-- 16.5 -->
+                <channelDensity condDensity="0mS_per_cm2" id="Ih" ionChannel="OLM_Ih" erev="-32.9 mV" ion="h"/> <!-- 1.358 -->
                 
                 <spikeThresh value="0 mV"/>
                 <specificCapacitance value="1.3 uF_per_cm2"/>

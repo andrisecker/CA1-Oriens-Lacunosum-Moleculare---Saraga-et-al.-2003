@@ -5,11 +5,11 @@
 
     <ionChannel id="OLM_Nadend" conductance="117pS" type="ionChannelHH" species="na">
         
-        <gateHHrates id="m" instances="3">
+        <gateHHratesInstantaneous id="m" instances="3">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
             <forwardRate type="Saraga2003_INa_rate" rate="1per_ms" midpoint="-45mV" scale="10mV"/>
             <reverseRate type="HHExpRate" rate="4per_ms" midpoint="-70mV" scale="-18mV"/>
-        </gateHHrates>
+        </gateHHratesInstantaneous>
     
         <gateHHrates id="h" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
@@ -18,6 +18,45 @@
         </gateHHrates>
                             
     </ionChannel>
+    
+    
+    <ComponentType name="gateHHratesInstantaneous"
+                   extends="gateHHrates"
+                   description="Gate which follows the general Hodgkin Huxley formalism, except for tau = 0">
+
+        <Child name="notes" type="notes"/>
+
+        <Child name="forwardRate" type="baseVoltageDepRate"/>
+        <Child name="reverseRate" type="baseVoltageDepRate"/>
+
+        <Constant name="SEC" dimension="time" value="1s"/>
+
+        <Exposure name="alpha" dimension="per_time"/>
+        <Exposure name="beta" dimension="per_time"/>
+
+        <Exposure name="tau" dimension="time"/>
+        <Exposure name="inf" dimension="none"/>
+        
+        <Exposure name="rateScale" dimension="none"/>
+
+        <Dynamics>
+
+            <DerivedVariable name="alpha" dimension="per_time" exposure="alpha" select="forwardRate/r"/>
+            <DerivedVariable name="beta" dimension="per_time" exposure="beta" select="reverseRate/r"/>
+
+            <DerivedVariable name="inf" dimension="none" exposure="inf" value="alpha/(alpha+beta)"/>
+
+            <DerivedVariable name="tau" dimension="time" exposure="tau" value="0 * SEC"/>
+
+            <DerivedVariable name="q"  exposure="q" dimension="none" value="inf"/>
+            
+            <DerivedVariable name="rateScale" exposure="rateScale" dimension="none" value="1"/>
+
+            <DerivedVariable name="fcond" exposure="fcond" dimension="none" value="q^instances"/>
+
+        </Dynamics>
+        
+    </ComponentType>
     
     <ComponentType name="Saraga2003_INa_rate"
                    extends="baseHHRate"

@@ -8,42 +8,29 @@
         <gateHHtauInf id="a" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
             <timeCourse type="fixedTimeCourse" tau="5ms"/>
-            <steadyState type="HHSigmoidVariable" rate="1" midpoint="-0.014V" scale="0.0166V"/>
+            <steadyState type="HHSigmoidVariable" rate="1" midpoint="-14mV" scale="16.6mV"/>
         </gateHHtauInf>
     
-        <gateHHrates id="b" instances="1">
+        <gateHHtauInf id="b" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
-            <forwardRate type="Saraga2003_IA_alpha_rate"/>
-            <reverseRate type="Saraga2003_IA_beta_rate"/>
-        </gateHHrates>
+            <timeCourse type="Saraga2003_IA_tau" />
+            <steadyState type="HHSigmoidVariable" rate="1" midpoint="-71mV" scale="-7.3mV"/>
+        </gateHHtauInf>
                             
     </ionChannel>
     
-    
-    <ComponentType name="Saraga2003_IA_alpha_rate"
-                   extends="baseVoltageDepRate"
-                   description="1/Exponential rate to describe IA in Saraga 2003">
-
+    <ComponentType name="Saraga2003_IA_tau"
+                   extends="baseVoltageDepTime"
+                   description="Tau parameter to describe IA in Saraga 2003">
+        
         <Constant name="TIME_SCALE" dimension="time" value="1 ms"/>
         <Constant name="VOLT_SCALE" dimension="voltage" value="1 mV"/>
-        
+
         <Dynamics>
             <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>
-            <DerivedVariable name="r" exposure="r" dimension="per_time" value="(0.000009 / (exp((V - 26)/18.5))) / TIME_SCALE"/>
-        </Dynamics>
-
-    </ComponentType>
-       
-    <ComponentType name="Saraga2003_IA_beta_rate"
-                   extends="baseVoltageDepRate"
-                   description="sigmoid like rate to describe IA in Saraga 2003">
-
-        <Constant name="TIME_SCALE" dimension="time" value="1 ms"/>
-        <Constant name="VOLT_SCALE" dimension="voltage" value="1 mV"/>
-        
-        <Dynamics>
-            <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>
-            <DerivedVariable name="r" exposure="r"  dimension="per_time" value="(0.014 / (0.2 + exp((V + 70)/-11))) / TIME_SCALE"/>
+            <DerivedVariable name="alpha_b" dimension="per_time" value="(0.000009 / (exp((V - 26)/18.5))) / TIME_SCALE"/>
+            <DerivedVariable name="beta_b" dimension="per_time" value="(0.014 / (0.2 + exp(-(V + 70)/11))) / TIME_SCALE"/>
+            <DerivedVariable name="t" exposure="t" dimension="time" value="1/(alpha_b + beta_b)"/>
         </Dynamics>
 
     </ComponentType>

@@ -16,7 +16,7 @@
     
     <ComponentType name="Saraga2003_Ih_tau"
                    extends="baseVoltageDepTime"
-                   description="Tau parameter to describe IK in Saraga 2003">
+                   description="Tau parameter to describe Ih in Saraga 2003">
         
         <Constant name="TIME_SCALE" dimension="time" value="1 ms"/>
         <Constant name="VOLT_SCALE" dimension="voltage" value="1 mV"/>
