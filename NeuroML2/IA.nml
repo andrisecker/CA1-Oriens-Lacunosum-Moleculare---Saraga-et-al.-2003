@@ -28,7 +28,7 @@
         <Constant name="VOLT_SCALE" dimension="voltage" value="1 mV"/>
         
         <Dynamics>
-            <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>       
+            <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>
             <DerivedVariable name="r" exposure="r" dimension="per_time" value="(0.000009 / (exp((V - 26)/18.5))) / TIME_SCALE"/>
         </Dynamics>
 
@@ -42,8 +42,8 @@
         <Constant name="VOLT_SCALE" dimension="voltage" value="1 mV"/>
         
         <Dynamics>
-            <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>       
-            <DerivedVariable name="r" exposure="r"  dimension="per_time" value="(0.014 / (0.2 + exp(-(V + 70)/11))) / TIME_SCALE"/>
+            <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>
+            <DerivedVariable name="r" exposure="r"  dimension="per_time" value="(0.014 / (0.2 + exp((V + 70)/-11))) / TIME_SCALE"/>
         </Dynamics>
 
     </ComponentType>

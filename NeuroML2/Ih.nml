@@ -23,7 +23,7 @@
 
         <Dynamics>
             <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>
-            <DerivedVariable name="t" exposure="t" dimension="time" value="(100 + 1 / (exp(-17.9 - 0.116*V) + exp(-1.84 + 0.09*V)))  * TIME_SCALE"/>
+            <DerivedVariable name="t" exposure="t" dimension="time" value="(100 + (1 / (exp(-17.9 - 0.116*V) + exp(-1.84 + 0.09*V))))  * TIME_SCALE"/>
         </Dynamics>
 
     </ComponentType>
