@@ -3,7 +3,7 @@
 
     <notes>ChannelML file containing a single Channel description from Saraga et al 2003</notes>
 
-    <ionChannel id="Ih" conductance="13.85pS" type="ionChannelHH" species="non_specific">
+    <ionChannel id="Ih" conductance="13.85pS" type="ionChannelHH" species="h">
         
         <gateHHtauInf id="r" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
