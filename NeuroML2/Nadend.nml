@@ -3,11 +3,11 @@
 
     <notes>ChannelML file containing a single Channel description from Saraga et al 2003</notes>
 
-    <ionChannel id="OLM_Nadend" conductance="117pS" type="ionChannelHH" species="na">
+    <ionChannel id="Nadend" conductance="117pS" type="ionChannelHH" species="na">
         
         <gateHHratesInstantaneous id="m" instances="3">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
-            <forwardRate type="Saraga2003_INa_rate" rate="1per_ms" midpoint="-45mV" scale="10mV"/>
+            <forwardRate type="HHExpLinearRate" rate="1per_ms" midpoint="-45mV" scale="10mV"/>
             <reverseRate type="HHExpRate" rate="4per_ms" midpoint="-70mV" scale="-18mV"/>
         </gateHHratesInstantaneous>
     
@@ -58,6 +58,7 @@
         
     </ComponentType>
     
+    <!--  Original NEURON version:
     <ComponentType name="Saraga2003_INa_rate"
                    extends="baseHHRate"
                    description="conditional ExpLinearRate to describe INa in Saraga 2003">
@@ -71,15 +72,12 @@
             </ConditionalDerivedVariable>
 
             <ConditionalDerivedVariable name="r" exposure="r" dimension="per_time">
-                <!--  Original NEURON version:
                 <Case condition="abs(tmp) .lt. 1e-6" value="scale * (1 + tmp/2)"/>
                 <Case condition="abs(tmp) .geq. 1e-6" value="(rate * tmp) / (1 - exp_tmp )"/>
-                -->               
-                <Case condition="abs(tmp) .eq. 0" value="scale * (1 + tmp/2)"/>
-                <Case condition="abs(tmp) .neq. 0" value="(rate * tmp) / (1 - exp_tmp )"/>
             </ConditionalDerivedVariable>
         </Dynamics>
 
     </ComponentType>
+    -->
 
 </neuroml>
