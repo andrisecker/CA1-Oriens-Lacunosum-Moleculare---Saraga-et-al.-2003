@@ -38,8 +38,8 @@
                 <!-- 1 pS_per_um2 = 0.1 mS_per_cm2 -->
                 <channelDensity condDensity="10.7mS_per_cm2" id="Nasoma" ionChannel="Nasoma" erev="90.0 mV" ion="na"/> <!-- 10.7 -->
                 <channelDensity condDensity="31.9mS_per_cm2" id="Ksoma" ionChannel="Ksoma" erev="-100.0 mV" ion="k"/> <!-- 31.9 -->
-                <channelDensity condDensity="0mS_per_cm2" id="IA" ionChannel="IA" erev="-100.0 mV" ion="k"/> <!-- 16.5 -->
-                <channelDensity condDensity="0mS_per_cm2" id="Ih" ionChannel="Ih" erev="-32.9 mV" ion="h"/> <!-- 1.358 -->
+                <channelDensity condDensity="16.5mS_per_cm2" id="IA" ionChannel="IA" erev="-100.0 mV" ion="k"/> <!-- 16.5 -->
+                <channelDensity condDensity="1.358mS_per_cm2" id="Ih" ionChannel="Ih" erev="-32.9 mV" ion="h"/> <!-- 1.358 -->
                 
                 <spikeThresh value="0 mV"/>
                 <specificCapacitance value="1.3 uF_per_cm2"/>
