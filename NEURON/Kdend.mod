@@ -36,6 +36,7 @@ ASSIGNED {
 }
  
 INITIAL {
+    evaluate_fct(v)
 	n = ninf
 }
 

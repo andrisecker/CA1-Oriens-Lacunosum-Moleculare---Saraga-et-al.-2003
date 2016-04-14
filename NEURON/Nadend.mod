@@ -76,6 +76,7 @@ ASSIGNED {
 }
  
 INITIAL {
+    evaluate_fct(v)
 	m = minf
 	h = hinf
 }
