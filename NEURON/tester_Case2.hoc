@@ -1,5 +1,6 @@
 load_file("nrngui.hoc")
 load_file("SaragaOLM_Case2.hoc")
+load_file("SaragaOLM_Case2.ses")
 
 // ======================================================
 
@@ -7,7 +8,15 @@ objectvar OLMcells[1]
 
 OLMcells[0] = new OLMSaraga_Case2()
 
-v_init = -65
+forall{
+	celsius = 24
+	insert na_ion ena = 90
+	insert k_ion ek = -100
+	insert h_ion eh = -32.9
+    nseg = L/10+1
+}
+
+v_init = -73
 t = 0
 dt = 0.001
 steps_per_ms = 1000

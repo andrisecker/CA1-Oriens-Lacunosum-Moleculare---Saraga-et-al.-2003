@@ -1,11 +1,11 @@
 begintemplate OLMSaraga_Case2
 
-public soma, dend
+public init, soma, dend
 
 create soma[9], dend2[6], dend4[22], dend3[2], dend1[20], dend7[10], dend8[11]
 create dend6[3], dend5
 
-proc celldef() {
+proc init() {
   topol()
   subsets()
   geom()
@@ -463,18 +463,6 @@ proc biophys() {
       el_Nadend = -70
   }
 }
-forall{
-	celsius = 24
-	insert na_ion ena = 90
-	insert k_ion ek = -100
-	insert h_ion eh = -32.9
-}
-access soma
-
-celldef()
-
-forall{
-	nseg=L/10+1}
 
 endtemplate OLMSaraga_Case2
 

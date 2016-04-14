@@ -5,7 +5,6 @@ dump = new File()
 
 recv.record(&OLMcells[0].soma.v(0.5))
 
-init()
 run()
 
 dump.wopen("saragaolm.dat")
