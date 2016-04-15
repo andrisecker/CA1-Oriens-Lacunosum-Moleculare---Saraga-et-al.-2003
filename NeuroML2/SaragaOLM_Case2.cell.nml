@@ -22,29 +22,66 @@
         <proximal x="-14" y="-164" z="0" diameter="9.22"/>
         <distal x="-11.08" y="-164" z="0" diameter="9.22"/>
       </segment>
-<!-- Section: OLMSaraga_Case2[0].dend2[0] (segmentGroup: dend2_0) which has 2 3D points, so 1 segment(s)-->
-      <segment id="10" name = "Seg0_dend2_0">  <!-- Connected at 0 on parent section: OLMSaraga_Case2[0].soma[0]  -->
-        <parent segment="0"/>
-        <proximal x="-14" y="-164" z="0" diameter="1.07"/>
-        <distal x="-16.7235" y="-158.553" z="0" diameter="1.07"/>
-      </segment>
 <!-- Section: OLMSaraga_Case2[0].soma[1] (segmentGroup: soma_1) which has 2 3D points, so 1 segment(s)-->
       <segment id="2" name = "Seg0_soma_1">  <!-- Connected at 0 on parent section: OLMSaraga_Case2[0].soma[0]  -->
         <parent segment="0"/>
         <proximal x="-14" y="-164" z="0" diameter="8.03"/>
         <distal x="-16.92" y="-164" z="0" diameter="8.03"/>
       </segment>
-<!-- Section: OLMSaraga_Case2[0].dend4[0] (segmentGroup: dend4_0) which has 2 3D points, so 1 segment(s)-->
-      <segment id="16" name = "Seg0_dend4_0">
-        <parent segment="0"/>
-        <proximal x="-11.08" y="-164" z="0" diameter="1.38"/>
-        <distal x="-11.08" y="-126.28" z="0" diameter="1.38"/>
-      </segment>
 <!-- Section: OLMSaraga_Case2[0].soma[2] (segmentGroup: soma_2) which has 2 3D points, so 1 segment(s)-->
       <segment id="3" name = "Seg0_soma_2">
         <parent segment="0"/>
         <proximal x="-11.08" y="-164" z="0" diameter="9.82"/>
         <distal x="-8.16" y="-164" z="0" diameter="9.82"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[3] (segmentGroup: soma_3) which has 2 3D points, so 1 segment(s)-->
+      <segment id="4" name = "Seg0_soma_3">
+        <parent segment="2"/>
+        <proximal x="-16.92" y="-164" z="0" diameter="6.78"/>
+        <distal x="-19.84" y="-164" z="0" diameter="6.78"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[4] (segmentGroup: soma_4) which has 2 3D points, so 1 segment(s)-->
+      <segment id="5" name = "Seg0_soma_4">
+        <parent segment="3"/>
+        <proximal x="-8.16" y="-164" z="0" diameter="7.6"/>
+        <distal x="-5.24" y="-164" z="0" diameter="7.6"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[5] (segmentGroup: soma_5) which has 2 3D points, so 1 segment(s)-->
+      <segment id="6" name = "Seg0_soma_5">
+        <parent segment="4"/>
+        <proximal x="-19.84" y="-164" z="0" diameter="5.87"/>
+        <distal x="-22.76" y="-164" z="0" diameter="5.87"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[6] (segmentGroup: soma_6) which has 2 3D points, so 1 segment(s)-->
+      <segment id="7" name = "Seg0_soma_6">
+        <parent segment="5"/>
+        <proximal x="-5.24" y="-164" z="0" diameter="4.92"/>
+        <distal x="-2.32" y="-164" z="0" diameter="4.92"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[7] (segmentGroup: soma_7) which has 2 3D points, so 1 segment(s)-->
+      <segment id="8" name = "Seg0_soma_7">
+        <parent segment="6"/>
+        <proximal x="-22.76" y="-164" z="0" diameter="4.15"/>
+        <distal x="-25.68" y="-164" z="0" diameter="4.15"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[8] (segmentGroup: soma_8) which has 2 3D points, so 1 segment(s)-->
+      <segment id="9" name = "Seg0_soma_8">
+        <parent segment="7"/>
+        <proximal x="-2.32" y="-164" z="0" diameter="3.24"/>
+        <distal x="0.599997" y="-164" z="0" diameter="3.24"/>
+      </segment> 
+      
+<!-- Section: OLMSaraga_Case2[0].dend2[0] (segmentGroup: dend2_0) which has 2 3D points, so 1 segment(s)-->
+      <segment id="10" name = "Seg0_dend2_0">  <!-- Connected at 0 on parent section: OLMSaraga_Case2[0].soma[0]  -->
+        <parent segment="0"/>
+        <proximal x="-14" y="-164" z="0" diameter="1.07"/>
+        <distal x="-16.7235" y="-158.553" z="0" diameter="1.07"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[0] (segmentGroup: dend4_0) which has 2 3D points, so 1 segment(s)-->
+      <segment id="16" name = "Seg0_dend4_0">
+        <parent segment="0"/>
+        <proximal x="-11.08" y="-164" z="0" diameter="1.38"/>
+        <distal x="-11.08" y="-126.28" z="0" diameter="1.38"/>
       </segment>
 <!-- Section: OLMSaraga_Case2[0].dend3[0] (segmentGroup: dend3_0) which has 2 3D points, so 1 segment(s)-->
       <segment id="38" name = "Seg0_dend3_0">
@@ -64,12 +101,6 @@
         <proximal x="-16.92" y="-164" z="0" diameter="1.29"/>
         <distal x="-112.958" y="-144.792" z="0" diameter="1.29"/>
       </segment>
-<!-- Section: OLMSaraga_Case2[0].soma[3] (segmentGroup: soma_3) which has 2 3D points, so 1 segment(s)-->
-      <segment id="4" name = "Seg0_soma_3">
-        <parent segment="2"/>
-        <proximal x="-16.92" y="-164" z="0" diameter="6.78"/>
-        <distal x="-19.84" y="-164" z="0" diameter="6.78"/>
-      </segment>
 <!-- Section: OLMSaraga_Case2[0].dend4[2] (segmentGroup: dend4_2) which has 2 3D points, so 1 segment(s)-->
       <segment id="18" name = "Seg0_dend4_2">
         <parent segment="16"/>
@@ -81,12 +112,6 @@
         <parent segment="16"/>
         <proximal x="-11.08" y="-126.28" z="0" diameter="1.15"/>
         <distal x="0.279225" y="-103.562" z="0" diameter="1.15"/>
-      </segment>
-<!-- Section: OLMSaraga_Case2[0].soma[4] (segmentGroup: soma_4) which has 2 3D points, so 1 segment(s)-->
-      <segment id="5" name = "Seg0_soma_4">
-        <parent segment="3"/>
-        <proximal x="-8.16" y="-164" z="0" diameter="7.6"/>
-        <distal x="-5.24" y="-164" z="0" diameter="7.6"/>
       </segment>
 <!-- Section: OLMSaraga_Case2[0].dend3[1] (segmentGroup: dend3_1) which has 2 3D points, so 1 segment(s)-->
       <segment id="39" name = "Seg0_dend3_1">
@@ -124,12 +149,6 @@
         <proximal x="-19.84" y="-164" z="0" diameter="0.91"/>
         <distal x="-15.0414" y="-173.597" z="0" diameter="0.91"/>
       </segment>
-<!-- Section: OLMSaraga_Case2[0].soma[5] (segmentGroup: soma_5) which has 2 3D points, so 1 segment(s)-->
-      <segment id="6" name = "Seg0_soma_5">
-        <parent segment="4"/>
-        <proximal x="-19.84" y="-164" z="0" diameter="5.87"/>
-        <distal x="-22.76" y="-164" z="0" diameter="5.87"/>
-      </segment>
 <!-- Section: OLMSaraga_Case2[0].dend4[6] (segmentGroup: dend4_6) which has 2 3D points, so 1 segment(s)-->
       <segment id="22" name = "Seg0_dend4_6">
         <parent segment="18"/>
@@ -153,12 +172,6 @@
         <parent segment="17"/>
         <proximal x="0.279225" y="-103.562" z="0" diameter="0.91"/>
         <distal x="13.3091" y="-84.0167" z="0" diameter="0.91"/>
-      </segment>
-<!-- Section: OLMSaraga_Case2[0].soma[6] (segmentGroup: soma_6) which has 2 3D points, so 1 segment(s)-->
-      <segment id="7" name = "Seg0_soma_6">
-        <parent segment="5"/>
-        <proximal x="-5.24" y="-164" z="0" diameter="4.92"/>
-        <distal x="-2.32" y="-164" z="0" diameter="4.92"/>
       </segment>
 <!-- Section: OLMSaraga_Case2[0].dend2[5] (segmentGroup: dend2_5) which has 2 3D points, so 1 segment(s)-->
       <segment id="15" name = "Seg0_dend2_5">
@@ -196,12 +209,6 @@
         <proximal x="-15.0414" y="-173.597" z="0" diameter="0.91"/>
         <distal x="-25.6834" y="-184.239" z="0" diameter="0.91"/>
       </segment>
-<!-- Section: OLMSaraga_Case2[0].soma[7] (segmentGroup: soma_7) which has 2 3D points, so 1 segment(s)-->
-      <segment id="8" name = "Seg0_soma_7">
-        <parent segment="6"/>
-        <proximal x="-22.76" y="-164" z="0" diameter="4.15"/>
-        <distal x="-25.68" y="-164" z="0" diameter="4.15"/>
-      </segment>
 <!-- Section: OLMSaraga_Case2[0].dend4[12] (segmentGroup: dend4_12) which has 2 3D points, so 1 segment(s)-->
       <segment id="28" name = "Seg0_dend4_12">
         <parent segment="22"/>
@@ -237,12 +244,6 @@
         <parent segment="19"/>
         <proximal x="13.3091" y="-84.0167" z="0" diameter="0.88"/>
         <distal x="48.0887" y="-75.3218" z="0" diameter="0.88"/>
-      </segment>
-<!-- Section: OLMSaraga_Case2[0].soma[8] (segmentGroup: soma_8) which has 2 3D points, so 1 segment(s)-->
-      <segment id="9" name = "Seg0_soma_8">
-        <parent segment="7"/>
-        <proximal x="-2.32" y="-164" z="0" diameter="3.24"/>
-        <distal x="0.599997" y="-164" z="0" diameter="3.24"/>
       </segment>
 <!-- Section: OLMSaraga_Case2[0].dend1[9] (segmentGroup: dend1_9) which has 2 3D points, so 1 segment(s)-->
       <segment id="49" name = "Seg0_dend1_9">
@@ -1895,19 +1896,19 @@
 
       <membraneProperties> 
           
-        <channelDensity ionChannel="pas" id="passive_all"  condDensity = "0.05 mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/>  
+        <channelDensity ionChannel="pas" id="passive_all" condDensity="0mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/>  
 
-        <channelDensity ionChannel="IA" id="IA_soma_group"  condDensity = "16.5 mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/>
+        <channelDensity ionChannel="IA" id="IA_soma_group" condDensity="0mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> <!-- 16.5 -->
 
-        <channelDensity ionChannel="Ih" id="Ih_soma_group"  condDensity = "1.385 mS_per_cm2" segmentGroup="soma_group"  erev="-32.9mV" ion="h"/>
+        <channelDensity ionChannel="Ih" id="Ih_soma_group" condDensity="0mS_per_cm2" segmentGroup="soma_group"  erev="-32.9mV" ion="h"/> <!-- 1.385 -->
 
-        <channelDensity ionChannel="Kdend" id="Kdend_dendrite_group"  condDensity = "23 mS_per_cm2" segmentGroup="dendrite_group"  erev="-100mV" ion="k"/>
+        <channelDensity ionChannel="Kdend" id="Kdend_dendrite_group" condDensity="0mS_per_cm2" segmentGroup="dendrite_group"  erev="-100mV" ion="k"/> <!-- 23 -->
 
-        <channelDensity ionChannel="Ksoma" id="Ksoma_soma_group"  condDensity = "31.9 mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/>
+        <channelDensity ionChannel="Ksoma" id="Ksoma_soma_group" condDensity="0mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> <!-- 31.9 -->
 
-        <channelDensity ionChannel="Nadend" id="Nadend_dendrite_group"  condDensity = "11.7 mS_per_cm2" segmentGroup="dendrite_group"  erev="90mV" ion="na"/>        
+        <channelDensity ionChannel="Nadend" id="Nadend_dendrite_group" condDensity="0mS_per_cm2" segmentGroup="dendrite_group"  erev="90mV" ion="na"/> <!-- 11.7 -->        
 
-        <channelDensity ionChannel="Nasoma" id="Nasoma_soma_group"  condDensity = "10.7 mS_per_cm2" segmentGroup="soma_group"  erev="90mV" ion="na"/>
+        <channelDensity ionChannel="Nasoma" id="Nasoma_soma_group" condDensity="10.7mS_per_cm2" segmentGroup="soma_group"  erev="90mV" ion="na"/> <!-- 10.7 -->
         
         <spikeThresh value="0 mV"/>
 
