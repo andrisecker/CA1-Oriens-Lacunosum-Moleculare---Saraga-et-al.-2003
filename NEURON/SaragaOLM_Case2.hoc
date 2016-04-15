@@ -2,6 +2,9 @@ begintemplate OLMSaraga_Case2
 
 public init, all, Soma, Dendrites
 
+public soma
+public dend2
+
 create soma[9], dend2[6], dend4[22], dend3[2], dend1[20], dend7[10], dend8[11]
 create dend6[3], dend5
 
