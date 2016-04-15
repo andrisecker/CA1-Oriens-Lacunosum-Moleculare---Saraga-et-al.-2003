@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Lems>
+
+  <!-- CA1 OLM cell -->
+
+    <Target component="sim1"/>
+
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+
+    <Include file="SaragaOLM_Case2.net.nml"/>
+ 
+<!-- Simulation specifications -->
+
+    <Simulation id="sim1" length="200ms" step="0.001ms" target="network">
+
+        <Display id="d1" title="Saraga 2003 CA1 OLM cell with 0.1nA input" timeScale="1ms" xmin="-10" xmax="210" ymin="-85" ymax="55">
+            <Line id="OLM V" quantity="/Pop_OLMSaraga_Case2_0_0/0/OLMSaraga_Case2_0_0/v" scale="1mV" color="#0000FF" timeScale="1ms"/>
+        </Display>
+    
+        <OutputFile id="of0" fileName="saragaolm.dat">
+            <OutputColumn id="olm" quantity="Pop_OLMSaraga_Case2_0_0/0/OLMSaraga_Case2_0_0/v"/>
+        </OutputFile>
+      
+    </Simulation>
+  
+</Lems>

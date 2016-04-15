@@ -3,6 +3,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd"
     id = "NeuroML2_file_exported_from_NEURON">
+    
+    <Include file="Nasoma.channel.nml"/>
+    <Include file="Nadend.channel.nml"/>
+    <Include file="Ksoma.channel.nml"/>
+    <Include file="Kdend.channel.nml"/>
+    <Include file="IA.channel.nml"/>
+    <Include file="Ih.channel.nml"/>
+    <Include file="pas.channel.nml"/>
 
   <notes> NeuroML 2 file generated from ModelView by: NEURON -- Release 7.4 (1370:16a7055d4a86) 2015-11-09
           Authors: Michael Hines, Sushil Kambampati and Padraig Gleeson,
@@ -1792,7 +1800,7 @@
         <include segmentGroup = "dend8_9"/>
       </segmentGroup>
 
-      <segmentGroup id="ModelViewParmSubset_1"> 
+      <segmentGroup id="soma_group"> 
         <include segmentGroup = "soma_0"/>
         <include segmentGroup = "soma_1"/>
         <include segmentGroup = "soma_2"/>
@@ -1804,7 +1812,7 @@
         <include segmentGroup = "soma_8"/>
       </segmentGroup>
 
-      <segmentGroup id="ModelViewParmSubset_2"> 
+      <segmentGroup id="dendrite_group"> 
         <include segmentGroup = "dend2_0"/>
         <include segmentGroup = "dend4_0"/>
         <include segmentGroup = "dend3_0"/>
@@ -1889,24 +1897,26 @@
     <biophysicalProperties id="biophys"> 
 
       <membraneProperties> 
+          
+        <channelDensity ionChannel="pas" id="passive_all"  condDensity = "0.05 mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/>  
 
-        <channelDensity ionChannel="IA" id="IA_XXX"  condDensity = "16.5 mS_per_cm2" segmentGroup="ModelViewParmSubset_1"  erev="-100.000000mV" />
+        <channelDensity ionChannel="IA" id="IA_soma_group"  condDensity = "16.5 mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/>
 
-        <channelDensity ionChannel="Ih" id="Ih_XXX"  condDensity = "1.385 mS_per_cm2" segmentGroup="ModelViewParmSubset_1"  erev="-32.900000mV" />
+        <channelDensity ionChannel="Ih" id="Ih_soma_group"  condDensity = "1.385 mS_per_cm2" segmentGroup="soma_group"  erev="-32.9mV" ion="h"/>
 
-        <channelDensity ionChannel="Kdend" id="Kdend_XXX"  condDensity = "23 mS_per_cm2" segmentGroup="ModelViewParmSubset_2"  erev="-100.000000mV" />
+        <channelDensity ionChannel="Kdend" id="Kdend_dendrite_group"  condDensity = "23 mS_per_cm2" segmentGroup="dendrite_group"  erev="-100mV" ion="k"/>
 
-        <channelDensity ionChannel="Ksoma" id="Ksoma_XXX"  condDensity = "31.9 mS_per_cm2" segmentGroup="ModelViewParmSubset_1"  erev="-100.000000mV" />
+        <channelDensity ionChannel="Ksoma" id="Ksoma_soma_group"  condDensity = "31.9 mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/>
 
-        <channelDensity ionChannel="Nadend" id="Nadend_XXX"  condDensity = "11.7 mS_per_cm2" segmentGroup="ModelViewParmSubset_2"  erev="90.000000mV" />
+        <channelDensity ionChannel="Nadend" id="Nadend_dendrite_group"  condDensity = "11.7 mS_per_cm2" segmentGroup="dendrite_group"  erev="90mV" ion="na"/>        
 
-        <channelDensity ionChannel="Nadend" id="Nadend_XXX"  condDensity = "0.05 mS_per_cm2" segmentGroup="ModelViewParmSubset_2"  erev="90.000000mV" />
-
-        <channelDensity ionChannel="Nasoma" id="Nasoma_XXX"  condDensity = "10.7 mS_per_cm2" segmentGroup="ModelViewParmSubset_1"  erev="90.000000mV" />
-
-        <channelDensity ionChannel="Nasoma" id="Nasoma_XXX"  condDensity = "0.05 mS_per_cm2" segmentGroup="ModelViewParmSubset_1"  erev="90.000000mV" />
+        <channelDensity ionChannel="Nasoma" id="Nasoma_soma_group"  condDensity = "10.7 mS_per_cm2" segmentGroup="soma_group"  erev="90mV" ion="na"/>
 
         <specificCapacitance  value="1.3 uF_per_cm2" />
+        
+        <initMembPotential value="-73.0 mV"/>
+        
+        <spikeThresh value="0 mV"/>
 
       </membraneProperties> 
 
@@ -1919,13 +1929,5 @@
     </biophysicalProperties>
 
   </cell> 
-
-  <network id="network" type="networkWithTemperature" temperature="24 degC">
-    <population id="Pop_OLMSaraga_Case2_0_0" component="OLMSaraga_Case2_0_0" size="1" type="populationList">
-        <instance id="0">
-            <location x="0" y="0" z="0"/>
-        </instance>
-    </population>
-  </network>
  
 </neuroml>
