@@ -5,10 +5,10 @@
 
     <ionChannel id="Nasoma" conductance="107pS" type="ionChannelHH" species="na">
         
-        <gateHHratesInstantaneous id="m" instances="3">
+        <gateHHratesInstantaneous_Nasoma id="m" instances="3">
             <forwardRate type="HHExpLinearRate" rate="1per_ms" midpoint="-38mV" scale="10mV"/>
             <reverseRate type="HHExpRate" rate="4per_ms" midpoint="-63mV" scale="-18mV"/>  <!-- article: midpoint: -65mV-->
-        </gateHHratesInstantaneous>
+        </gateHHratesInstantaneous_Nasoma>
     
         <gateHHrates id="h" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
@@ -19,7 +19,7 @@
     </ionChannel>
     
     
-    <ComponentType name="gateHHratesInstantaneous"
+    <ComponentType name="gateHHratesInstantaneous_Nasoma"
                    extends="gateHHrates"
                    description="Gate which follows the general Hodgkin Huxley formalism, except for tau = 0">
 
