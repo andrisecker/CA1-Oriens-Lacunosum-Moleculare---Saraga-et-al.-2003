@@ -24,7 +24,7 @@
       </segment>
 <!-- Section: OLMSaraga_Case2[0].soma[1] (segmentGroup: soma_1) which has 2 3D points, so 1 segment(s)-->
       <segment id="2" name = "Seg0_soma_1">  <!-- Connected at 0 on parent section: OLMSaraga_Case2[0].soma[0]  -->
-        <parent segment="0"/>
+        <parent segment="0" fractionAlong="0"/>
         <proximal x="-14" y="-164" z="0" diameter="8.03"/>
         <distal x="-16.92" y="-164" z="0" diameter="8.03"/>
       </segment>
@@ -73,7 +73,7 @@
       
 <!-- Section: OLMSaraga_Case2[0].dend2[0] (segmentGroup: dend2_0) which has 2 3D points, so 1 segment(s)-->
       <segment id="10" name = "Seg0_dend2_0">  <!-- Connected at 0 on parent section: OLMSaraga_Case2[0].soma[0]  -->
-        <parent segment="0"/>
+        <parent segment="0" fractionAlong="0"/>
         <proximal x="-14" y="-164" z="0" diameter="1.07"/>
         <distal x="-16.7235" y="-158.553" z="0" diameter="1.07"/>
       </segment>
@@ -1896,17 +1896,17 @@
 
       <membraneProperties> 
           
-        <channelDensity ionChannel="pas" id="passive_all" condDensity="0mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/>  
+        <channelDensity ionChannel="pas" id="passive_all" condDensity="0.05mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/> <!-- 0.05 -->
 
-        <channelDensity ionChannel="IA" id="IA_soma_group" condDensity="0mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> <!-- 16.5 -->
+        <channelDensity ionChannel="IA" id="IA_soma_group" condDensity="16.5mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> <!-- 16.5 -->
 
-        <channelDensity ionChannel="Ih" id="Ih_soma_group" condDensity="0mS_per_cm2" segmentGroup="soma_group"  erev="-32.9mV" ion="h"/> <!-- 1.385 -->
+        <channelDensity ionChannel="Ih" id="Ih_soma_group" condDensity="1.358mS_per_cm2" segmentGroup="soma_group"  erev="-32.9mV" ion="h"/> <!-- 1.385 -->
 
-        <channelDensity ionChannel="Kdend" id="Kdend_dendrite_group" condDensity="0mS_per_cm2" segmentGroup="dendrite_group"  erev="-100mV" ion="k"/> <!-- 23 -->
+        <channelDensity ionChannel="Kdend" id="Kdend_dendrite_group" condDensity="23mS_per_cm2" segmentGroup="dendrite_group"  erev="-100mV" ion="k"/> <!-- 23 -->
 
-        <channelDensity ionChannel="Ksoma" id="Ksoma_soma_group" condDensity="0mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> <!-- 31.9 -->
+        <channelDensity ionChannel="Ksoma" id="Ksoma_soma_group" condDensity="31.9mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> <!-- 31.9 -->
 
-        <channelDensity ionChannel="Nadend" id="Nadend_dendrite_group" condDensity="0mS_per_cm2" segmentGroup="dendrite_group"  erev="90mV" ion="na"/> <!-- 11.7 -->        
+        <channelDensity ionChannel="Nadend" id="Nadend_dendrite_group" condDensity="11.7mS_per_cm2" segmentGroup="dendrite_group"  erev="90mV" ion="na"/> <!-- 11.7 -->        
 
         <channelDensity ionChannel="Nasoma" id="Nasoma_soma_group" condDensity="10.7mS_per_cm2" segmentGroup="soma_group"  erev="90mV" ion="na"/> <!-- 10.7 -->
         
