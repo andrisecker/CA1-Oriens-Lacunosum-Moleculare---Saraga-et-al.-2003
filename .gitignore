@@ -1,3 +1,6 @@
 x86_64
 *~
-
+/NEURON/Ksoma.n.inf.dat
+/NEURON/Ksoma.n.tau.dat
+/NEURON/saragaolm.dat
+/NeuroML2/SaragaOLM_Case2.cell.svg

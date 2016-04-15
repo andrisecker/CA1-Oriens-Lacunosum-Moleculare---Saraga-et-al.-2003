@@ -1,0 +1,1931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd"
+    id = "NeuroML2_file_exported_from_NEURON">
+
+  <notes> NeuroML 2 file generated from ModelView by: NEURON -- Release 7.4 (1370:16a7055d4a86) 2015-11-09
+          Authors: Michael Hines, Sushil Kambampati and Padraig Gleeson,
+          Yale University and UCL 
+  </notes>
+
+  <cell id="OLMSaraga_Case2_0_0">
+    <notes>Cell: OLMSaraga_Case2_0_0 exported from NEURON ModelView</notes>
+    <morphology id="morphology">
+<!-- Section: OLMSaraga_Case2[0].soma[0] (segmentGroup: soma_0) which has 2 3D points, so 1 segment(s)-->
+      <segment id="0" name = "Seg0_soma_0">
+        <proximal x="-14" y="-164" z="0" diameter="9.22"/>
+        <distal x="-11.08" y="-164" z="0" diameter="9.22"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend2[0] (segmentGroup: dend2_0) which has 2 3D points, so 1 segment(s)-->
+      <segment id="10" name = "Seg0_dend2_0">  <!-- Connected at 0 on parent section: OLMSaraga_Case2[0].soma[0]  -->
+        <parent segment="0"/>
+        <proximal x="-14" y="-164" z="0" diameter="1.07"/>
+        <distal x="-16.7235" y="-158.553" z="0" diameter="1.07"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[1] (segmentGroup: soma_1) which has 2 3D points, so 1 segment(s)-->
+      <segment id="2" name = "Seg0_soma_1">  <!-- Connected at 0 on parent section: OLMSaraga_Case2[0].soma[0]  -->
+        <parent segment="0"/>
+        <proximal x="-14" y="-164" z="0" diameter="8.03"/>
+        <distal x="-16.92" y="-164" z="0" diameter="8.03"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[0] (segmentGroup: dend4_0) which has 2 3D points, so 1 segment(s)-->
+      <segment id="16" name = "Seg0_dend4_0">
+        <parent segment="0"/>
+        <proximal x="-11.08" y="-164" z="0" diameter="1.38"/>
+        <distal x="-11.08" y="-126.28" z="0" diameter="1.38"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[2] (segmentGroup: soma_2) which has 2 3D points, so 1 segment(s)-->
+      <segment id="3" name = "Seg0_soma_2">
+        <parent segment="0"/>
+        <proximal x="-11.08" y="-164" z="0" diameter="9.82"/>
+        <distal x="-8.16" y="-164" z="0" diameter="9.82"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend3[0] (segmentGroup: dend3_0) which has 2 3D points, so 1 segment(s)-->
+      <segment id="38" name = "Seg0_dend3_0">
+        <parent segment="10"/>
+        <proximal x="-16.7235" y="-158.553" z="0" diameter="0.68"/>
+        <distal x="-100.264" y="-158.553" z="0" diameter="0.68"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend2[1] (segmentGroup: dend2_1) which has 2 3D points, so 1 segment(s)-->
+      <segment id="11" name = "Seg0_dend2_1">
+        <parent segment="10"/>
+        <proximal x="-16.7235" y="-158.553" z="0" diameter="0.89"/>
+        <distal x="-93.3491" y="-120.24" z="0" diameter="0.89"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[0] (segmentGroup: dend1_0) which has 2 3D points, so 1 segment(s)-->
+      <segment id="40" name = "Seg0_dend1_0">
+        <parent segment="2"/>
+        <proximal x="-16.92" y="-164" z="0" diameter="1.29"/>
+        <distal x="-112.958" y="-144.792" z="0" diameter="1.29"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[3] (segmentGroup: soma_3) which has 2 3D points, so 1 segment(s)-->
+      <segment id="4" name = "Seg0_soma_3">
+        <parent segment="2"/>
+        <proximal x="-16.92" y="-164" z="0" diameter="6.78"/>
+        <distal x="-19.84" y="-164" z="0" diameter="6.78"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[2] (segmentGroup: dend4_2) which has 2 3D points, so 1 segment(s)-->
+      <segment id="18" name = "Seg0_dend4_2">
+        <parent segment="16"/>
+        <proximal x="-11.08" y="-126.28" z="0" diameter="1.07"/>
+        <distal x="-11.08" y="-105.28" z="0" diameter="1.07"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[1] (segmentGroup: dend4_1) which has 2 3D points, so 1 segment(s)-->
+      <segment id="17" name = "Seg0_dend4_1">
+        <parent segment="16"/>
+        <proximal x="-11.08" y="-126.28" z="0" diameter="1.15"/>
+        <distal x="0.279225" y="-103.562" z="0" diameter="1.15"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[4] (segmentGroup: soma_4) which has 2 3D points, so 1 segment(s)-->
+      <segment id="5" name = "Seg0_soma_4">
+        <parent segment="3"/>
+        <proximal x="-8.16" y="-164" z="0" diameter="7.6"/>
+        <distal x="-5.24" y="-164" z="0" diameter="7.6"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend3[1] (segmentGroup: dend3_1) which has 2 3D points, so 1 segment(s)-->
+      <segment id="39" name = "Seg0_dend3_1">
+        <parent segment="38"/>
+        <proximal x="-100.264" y="-158.553" z="0" diameter="0.64"/>
+        <distal x="-161.81" y="-220.1" z="0" diameter="0.64"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend2[3] (segmentGroup: dend2_3) which has 2 3D points, so 1 segment(s)-->
+      <segment id="13" name = "Seg0_dend2_3">
+        <parent segment="11"/>
+        <proximal x="-93.3491" y="-120.24" z="0" diameter="0.68"/>
+        <distal x="-111.359" y="-120.24" z="0" diameter="0.68"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend2[2] (segmentGroup: dend2_2) which has 2 3D points, so 1 segment(s)-->
+      <segment id="12" name = "Seg0_dend2_2">
+        <parent segment="11"/>
+        <proximal x="-93.3491" y="-120.24" z="0" diameter="0.68"/>
+        <distal x="-164.19" y="-63.5678" z="0" diameter="0.68"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[2] (segmentGroup: dend1_2) which has 2 3D points, so 1 segment(s)-->
+      <segment id="42" name = "Seg0_dend1_2">
+        <parent segment="40"/>
+        <proximal x="-112.958" y="-144.792" z="0" diameter="1.07"/>
+        <distal x="-164.51" y="-127.609" z="0" diameter="1.07"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[1] (segmentGroup: dend1_1) which has 2 3D points, so 1 segment(s)-->
+      <segment id="41" name = "Seg0_dend1_1">
+        <parent segment="40"/>
+        <proximal x="-112.958" y="-144.792" z="0" diameter="0.86"/>
+        <distal x="-120.757" y="-152.592" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend7[0] (segmentGroup: dend7_0) which has 2 3D points, so 1 segment(s)-->
+      <segment id="60" name = "Seg0_dend7_0">
+        <parent segment="4"/>
+        <proximal x="-19.84" y="-164" z="0" diameter="0.91"/>
+        <distal x="-15.0414" y="-173.597" z="0" diameter="0.91"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[5] (segmentGroup: soma_5) which has 2 3D points, so 1 segment(s)-->
+      <segment id="6" name = "Seg0_soma_5">
+        <parent segment="4"/>
+        <proximal x="-19.84" y="-164" z="0" diameter="5.87"/>
+        <distal x="-22.76" y="-164" z="0" diameter="5.87"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[6] (segmentGroup: dend4_6) which has 2 3D points, so 1 segment(s)-->
+      <segment id="22" name = "Seg0_dend4_6">
+        <parent segment="18"/>
+        <proximal x="-11.08" y="-105.28" z="0" diameter="1.07"/>
+        <distal x="-75.3074" y="-23.635" z="0" diameter="1.07"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[5] (segmentGroup: dend4_5) which has 2 3D points, so 1 segment(s)-->
+      <segment id="21" name = "Seg0_dend4_5">
+        <parent segment="18"/>
+        <proximal x="-11.08" y="-105.28" z="0" diameter="0.86"/>
+        <distal x="-24.3204" y="7.26383" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[4] (segmentGroup: dend4_4) which has 2 3D points, so 1 segment(s)-->
+      <segment id="20" name = "Seg0_dend4_4">
+        <parent segment="17"/>
+        <proximal x="0.279225" y="-103.562" z="0" diameter="0.86"/>
+        <distal x="0.279225" y="-71.1015" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[3] (segmentGroup: dend4_3) which has 2 3D points, so 1 segment(s)-->
+      <segment id="19" name = "Seg0_dend4_3">
+        <parent segment="17"/>
+        <proximal x="0.279225" y="-103.562" z="0" diameter="0.91"/>
+        <distal x="13.3091" y="-84.0167" z="0" diameter="0.91"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[6] (segmentGroup: soma_6) which has 2 3D points, so 1 segment(s)-->
+      <segment id="7" name = "Seg0_soma_6">
+        <parent segment="5"/>
+        <proximal x="-5.24" y="-164" z="0" diameter="4.92"/>
+        <distal x="-2.32" y="-164" z="0" diameter="4.92"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend2[5] (segmentGroup: dend2_5) which has 2 3D points, so 1 segment(s)-->
+      <segment id="15" name = "Seg0_dend2_5">
+        <parent segment="13"/>
+        <proximal x="-111.359" y="-120.24" z="0" diameter="0.64"/>
+        <distal x="-126.781" y="-135.662" z="0" diameter="0.64"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend2[4] (segmentGroup: dend2_4) which has 2 3D points, so 1 segment(s)-->
+      <segment id="14" name = "Seg0_dend2_4">
+        <parent segment="13"/>
+        <proximal x="-111.359" y="-120.24" z="0" diameter="0.61"/>
+        <distal x="-220.009" y="-120.24" z="0" diameter="0.61"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[5] (segmentGroup: dend1_5) which has 2 3D points, so 1 segment(s)-->
+      <segment id="45" name = "Seg0_dend1_5">
+        <parent segment="42"/>
+        <proximal x="-164.51" y="-127.609" z="0" diameter="0.86"/>
+        <distal x="-170.422" y="-126.426" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[4] (segmentGroup: dend1_4) which has 2 3D points, so 1 segment(s)-->
+      <segment id="44" name = "Seg0_dend1_4">
+        <parent segment="42"/>
+        <proximal x="-164.51" y="-127.609" z="0" diameter="0.86"/>
+        <distal x="-298.417" y="-144.347" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[3] (segmentGroup: dend1_3) which has 2 3D points, so 1 segment(s)-->
+      <segment id="43" name = "Seg0_dend1_3">
+        <parent segment="41"/>
+        <proximal x="-120.757" y="-152.592" z="0" diameter="0.86"/>
+        <distal x="-131.724" y="-148.936" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend7[1] (segmentGroup: dend7_1) which has 2 3D points, so 1 segment(s)-->
+      <segment id="61" name = "Seg0_dend7_1">
+        <parent segment="60"/>
+        <proximal x="-15.0414" y="-173.597" z="0" diameter="0.91"/>
+        <distal x="-25.6834" y="-184.239" z="0" diameter="0.91"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[7] (segmentGroup: soma_7) which has 2 3D points, so 1 segment(s)-->
+      <segment id="8" name = "Seg0_soma_7">
+        <parent segment="6"/>
+        <proximal x="-22.76" y="-164" z="0" diameter="4.15"/>
+        <distal x="-25.68" y="-164" z="0" diameter="4.15"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[12] (segmentGroup: dend4_12) which has 2 3D points, so 1 segment(s)-->
+      <segment id="28" name = "Seg0_dend4_12">
+        <parent segment="22"/>
+        <proximal x="-75.3074" y="-23.635" z="0" diameter="0.96"/>
+        <distal x="-111.346" y="-6.81688" z="0" diameter="0.96"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[11] (segmentGroup: dend4_11) which has 2 3D points, so 1 segment(s)-->
+      <segment id="27" name = "Seg0_dend4_11">
+        <parent segment="22"/>
+        <proximal x="-75.3074" y="-23.635" z="0" diameter="0.91"/>
+        <distal x="-100.596" y="13.4543" z="0" diameter="0.91"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[10] (segmentGroup: dend4_10) which has 2 3D points, so 1 segment(s)-->
+      <segment id="26" name = "Seg0_dend4_10">
+        <parent segment="20"/>
+        <proximal x="0.279225" y="-71.1015" z="0" diameter="0.86"/>
+        <distal x="-7.78179" y="-63.0405" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[9] (segmentGroup: dend4_9) which has 2 3D points, so 1 segment(s)-->
+      <segment id="25" name = "Seg0_dend4_9">
+        <parent segment="20"/>
+        <proximal x="0.279225" y="-71.1015" z="0" diameter="0.91"/>
+        <distal x="-16.4101" y="61.3008" z="0" diameter="0.91"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[8] (segmentGroup: dend4_8) which has 2 3D points, so 1 segment(s)-->
+      <segment id="24" name = "Seg0_dend4_8">
+        <parent segment="19"/>
+        <proximal x="13.3091" y="-84.0167" z="0" diameter="0.86"/>
+        <distal x="47.674" y="-16.0505" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[7] (segmentGroup: dend4_7) which has 2 3D points, so 1 segment(s)-->
+      <segment id="23" name = "Seg0_dend4_7">
+        <parent segment="19"/>
+        <proximal x="13.3091" y="-84.0167" z="0" diameter="0.88"/>
+        <distal x="48.0887" y="-75.3218" z="0" diameter="0.88"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].soma[8] (segmentGroup: soma_8) which has 2 3D points, so 1 segment(s)-->
+      <segment id="9" name = "Seg0_soma_8">
+        <parent segment="7"/>
+        <proximal x="-2.32" y="-164" z="0" diameter="3.24"/>
+        <distal x="0.599997" y="-164" z="0" diameter="3.24"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[9] (segmentGroup: dend1_9) which has 2 3D points, so 1 segment(s)-->
+      <segment id="49" name = "Seg0_dend1_9">
+        <parent segment="45"/>
+        <proximal x="-170.422" y="-126.426" z="0" diameter="0.86"/>
+        <distal x="-214.192" y="-82.6561" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[8] (segmentGroup: dend1_8) which has 2 3D points, so 1 segment(s)-->
+      <segment id="48" name = "Seg0_dend1_8">
+        <parent segment="45"/>
+        <proximal x="-170.422" y="-126.426" z="0" diameter="0.86"/>
+        <distal x="-312.032" y="-126.426" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[7] (segmentGroup: dend1_7) which has 2 3D points, so 1 segment(s)-->
+      <segment id="47" name = "Seg0_dend1_7">
+        <parent segment="44"/>
+        <proximal x="-298.417" y="-144.347" z="0" diameter="0.86"/>
+        <distal x="-298.417" y="-155.307" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[6] (segmentGroup: dend1_6) which has 2 3D points, so 1 segment(s)-->
+      <segment id="46" name = "Seg0_dend1_6">
+        <parent segment="43"/>
+        <proximal x="-131.724" y="-148.936" z="0" diameter="0.86"/>
+        <distal x="-184.884" y="-148.936" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend7[3] (segmentGroup: dend7_3) which has 2 3D points, so 1 segment(s)-->
+      <segment id="63" name = "Seg0_dend7_3">
+        <parent segment="61"/>
+        <proximal x="-25.6834" y="-184.239" z="0" diameter="0.86"/>
+        <distal x="-70.3394" y="-217.731" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend7[2] (segmentGroup: dend7_2) which has 2 3D points, so 1 segment(s)-->
+      <segment id="62" name = "Seg0_dend7_2">
+        <parent segment="61"/>
+        <proximal x="-25.6834" y="-184.239" z="0" diameter="0.86"/>
+        <distal x="-25.6834" y="-195.629" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[20] (segmentGroup: dend4_20) which has 2 3D points, so 1 segment(s)-->
+      <segment id="36" name = "Seg0_dend4_20">
+        <parent segment="28"/>
+        <proximal x="-111.346" y="-6.81688" z="0" diameter="0.88"/>
+        <distal x="-187.2" y="5.8254" z="0" diameter="0.88"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[19] (segmentGroup: dend4_19) which has 2 3D points, so 1 segment(s)-->
+      <segment id="35" name = "Seg0_dend4_19">
+        <parent segment="28"/>
+        <proximal x="-111.346" y="-6.81688" z="0" diameter="0.86"/>
+        <distal x="-146.56" y="10.7899" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[18] (segmentGroup: dend4_18) which has 2 3D points, so 1 segment(s)-->
+      <segment id="34" name = "Seg0_dend4_18">
+        <parent segment="27"/>
+        <proximal x="-100.596" y="13.4543" z="0" diameter="0.91"/>
+        <distal x="-129.552" y="42.4103" z="0" diameter="0.91"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[17] (segmentGroup: dend4_17) which has 2 3D points, so 1 segment(s)-->
+      <segment id="33" name = "Seg0_dend4_17">
+        <parent segment="27"/>
+        <proximal x="-100.596" y="13.4543" z="0" diameter="0.88"/>
+        <distal x="-85.3362" y="28.7137" z="0" diameter="0.88"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[16] (segmentGroup: dend4_16) which has 2 3D points, so 1 segment(s)-->
+      <segment id="32" name = "Seg0_dend4_16">
+        <parent segment="26"/>
+        <proximal x="-7.78179" y="-63.0405" z="0" diameter="0.77"/>
+        <distal x="-31.5911" y="-51.3376" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[15] (segmentGroup: dend4_15) which has 2 3D points, so 1 segment(s)-->
+      <segment id="31" name = "Seg0_dend4_15">
+        <parent segment="26"/>
+        <proximal x="-7.78179" y="-63.0405" z="0" diameter="0.77"/>
+        <distal x="-7.78179" y="-49.2205" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[14] (segmentGroup: dend4_14) which has 2 3D points, so 1 segment(s)-->
+      <segment id="30" name = "Seg0_dend4_14">
+        <parent segment="23"/>
+        <proximal x="48.0887" y="-75.3218" z="0" diameter="0.64"/>
+        <distal x="67.784" y="-85.1694" z="0" diameter="0.64"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[13] (segmentGroup: dend4_13) which has 2 3D points, so 1 segment(s)-->
+      <segment id="29" name = "Seg0_dend4_13">
+        <parent segment="23"/>
+        <proximal x="48.0887" y="-75.3218" z="0" diameter="0.86"/>
+        <distal x="106.58" y="-63.6235" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend5 (segmentGroup: dend5) which has 2 3D points, so 1 segment(s)-->
+      <segment id="84" name = "Seg0_dend5">
+        <parent segment="9"/>
+        <proximal x="0.599997" y="-164" z="0" diameter="0.91"/>
+        <distal x="61.9352" y="-139.466" z="0" diameter="0.91"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend6[0] (segmentGroup: dend6_0) which has 2 3D points, so 1 segment(s)-->
+      <segment id="81" name = "Seg0_dend6_0">
+        <parent segment="9"/>
+        <proximal x="0.599997" y="-164" z="0" diameter="1.09"/>
+        <distal x="65.07" y="-164" z="0" diameter="1.09"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[0] (segmentGroup: dend8_0) which has 2 3D points, so 1 segment(s)-->
+      <segment id="70" name = "Seg0_dend8_0">
+        <parent segment="9"/>
+        <proximal x="0.599997" y="-164" z="0" diameter="0.91"/>
+        <distal x="4.86194" y="-172.524" z="0" diameter="0.91"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[10] (segmentGroup: dend1_10) which has 2 3D points, so 1 segment(s)-->
+      <segment id="50" name = "Seg0_dend1_10">
+        <parent segment="46"/>
+        <proximal x="-184.884" y="-148.936" z="0" diameter="0.86"/>
+        <distal x="-180.154" y="-153.667" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend7[8] (segmentGroup: dend7_8) which has 2 3D points, so 1 segment(s)-->
+      <segment id="68" name = "Seg0_dend7_8">
+        <parent segment="63"/>
+        <proximal x="-70.3394" y="-217.731" z="0" diameter="0.77"/>
+        <distal x="-173.073" y="-286.22" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend7[7] (segmentGroup: dend7_7) which has 2 3D points, so 1 segment(s)-->
+      <segment id="67" name = "Seg0_dend7_7">
+        <parent segment="62"/>
+        <proximal x="-25.6834" y="-195.629" z="0" diameter="0.86"/>
+        <distal x="-38.6013" y="-234.383" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend7[6] (segmentGroup: dend7_6) which has 2 3D points, so 1 segment(s)-->
+      <segment id="66" name = "Seg0_dend7_6">
+        <parent segment="62"/>
+        <proximal x="-25.6834" y="-195.629" z="0" diameter="0.86"/>
+        <distal x="-25.6834" y="-218.559" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend7[5] (segmentGroup: dend7_5) which has 2 3D points, so 1 segment(s)-->
+      <segment id="65" name = "Seg0_dend7_5">
+        <parent segment="62"/>
+        <proximal x="-25.6834" y="-195.629" z="0" diameter="0.77"/>
+        <distal x="-53.3343" y="-278.582" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend7[4] (segmentGroup: dend7_4) which has 2 3D points, so 1 segment(s)-->
+      <segment id="64" name = "Seg0_dend7_4">
+        <parent segment="62"/>
+        <proximal x="-25.6834" y="-195.629" z="0" diameter="0.86"/>
+        <distal x="-12.4872" y="-200.028" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend4[21] (segmentGroup: dend4_21) which has 2 3D points, so 1 segment(s)-->
+      <segment id="37" name = "Seg0_dend4_21">
+        <parent segment="31"/>
+        <proximal x="-7.78179" y="-49.2205" z="0" diameter="0.77"/>
+        <distal x="14.7874" y="-41.6975" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend6[2] (segmentGroup: dend6_2) which has 2 3D points, so 1 segment(s)-->
+      <segment id="83" name = "Seg0_dend6_2">
+        <parent segment="81"/>
+        <proximal x="65.07" y="-164" z="0" diameter="0.86"/>
+        <distal x="178.38" y="-164" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend6[1] (segmentGroup: dend6_1) which has 2 3D points, so 1 segment(s)-->
+      <segment id="82" name = "Seg0_dend6_1">
+        <parent segment="81"/>
+        <proximal x="65.07" y="-164" z="0" diameter="0.86"/>
+        <distal x="96.8907" y="-171.955" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[4] (segmentGroup: dend8_4) which has 2 3D points, so 1 segment(s)-->
+      <segment id="74" name = "Seg0_dend8_4">
+        <parent segment="70"/>
+        <proximal x="4.86194" y="-172.524" z="0" diameter="0.86"/>
+        <distal x="31.3759" y="-179.152" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[3] (segmentGroup: dend8_3) which has 2 3D points, so 1 segment(s)-->
+      <segment id="73" name = "Seg0_dend8_3">
+        <parent segment="70"/>
+        <proximal x="4.86194" y="-172.524" z="0" diameter="0.86"/>
+        <distal x="-18.9301" y="-190.368" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[2] (segmentGroup: dend8_2) which has 2 3D points, so 1 segment(s)-->
+      <segment id="72" name = "Seg0_dend8_2">
+        <parent segment="70"/>
+        <proximal x="4.86194" y="-172.524" z="0" diameter="0.77"/>
+        <distal x="-83.4101" y="-238.728" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[1] (segmentGroup: dend8_1) which has 2 3D points, so 1 segment(s)-->
+      <segment id="71" name = "Seg0_dend8_1">
+        <parent segment="70"/>
+        <proximal x="4.86194" y="-172.524" z="0" diameter="0.86"/>
+        <distal x="9.89213" y="-192.645" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[11] (segmentGroup: dend1_11) which has 2 3D points, so 1 segment(s)-->
+      <segment id="51" name = "Seg0_dend1_11">
+        <parent segment="50"/>
+        <proximal x="-180.154" y="-153.667" z="0" diameter="0.86"/>
+        <distal x="-188.108" y="-158.97" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend7[9] (segmentGroup: dend7_9) which has 2 3D points, so 1 segment(s)-->
+      <segment id="69" name = "Seg0_dend7_9">
+        <parent segment="64"/>
+        <proximal x="-12.4872" y="-200.028" z="0" diameter="0.86"/>
+        <distal x="33.3249" y="-269.323" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[5] (segmentGroup: dend8_5) which has 2 3D points, so 1 segment(s)-->
+      <segment id="75" name = "Seg0_dend8_5">
+        <parent segment="71"/>
+        <proximal x="9.89213" y="-192.645" z="0" diameter="0.86"/>
+        <distal x="20.2865" y="-223.828" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[13] (segmentGroup: dend1_13) which has 2 3D points, so 1 segment(s)-->
+      <segment id="53" name = "Seg0_dend1_13">
+        <parent segment="51"/>
+        <proximal x="-188.108" y="-158.97" z="0" diameter="0.77"/>
+        <distal x="-291.35" y="-173.719" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[12] (segmentGroup: dend1_12) which has 2 3D points, so 1 segment(s)-->
+      <segment id="52" name = "Seg0_dend1_12">
+        <parent segment="51"/>
+        <proximal x="-188.108" y="-158.97" z="0" diameter="0.77"/>
+        <distal x="-194.128" y="-171.009" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[7] (segmentGroup: dend8_7) which has 2 3D points, so 1 segment(s)-->
+      <segment id="77" name = "Seg0_dend8_7">
+        <parent segment="75"/>
+        <proximal x="20.2865" y="-223.828" z="0" diameter="0.86"/>
+        <distal x="-15.6345" y="-259.749" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[6] (segmentGroup: dend8_6) which has 2 3D points, so 1 segment(s)-->
+      <segment id="76" name = "Seg0_dend8_6">
+        <parent segment="75"/>
+        <proximal x="20.2865" y="-223.828" z="0" diameter="0.86"/>
+        <distal x="49.4123" y="-252.954" z="0" diameter="0.86"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[17] (segmentGroup: dend1_17) which has 2 3D points, so 1 segment(s)-->
+      <segment id="57" name = "Seg0_dend1_17">
+        <parent segment="53"/>
+        <proximal x="-291.35" y="-173.719" z="0" diameter="0.64"/>
+        <distal x="-319.27" y="-164.412" z="0" diameter="0.64"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[16] (segmentGroup: dend1_16) which has 2 3D points, so 1 segment(s)-->
+      <segment id="56" name = "Seg0_dend1_16">
+        <parent segment="53"/>
+        <proximal x="-291.35" y="-173.719" z="0" diameter="0.77"/>
+        <distal x="-305.428" y="-180.758" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[15] (segmentGroup: dend1_15) which has 2 3D points, so 1 segment(s)-->
+      <segment id="55" name = "Seg0_dend1_15">
+        <parent segment="52"/>
+        <proximal x="-194.128" y="-171.009" z="0" diameter="0.77"/>
+        <distal x="-204.051" y="-174.316" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[14] (segmentGroup: dend1_14) which has 2 3D points, so 1 segment(s)-->
+      <segment id="54" name = "Seg0_dend1_14">
+        <parent segment="52"/>
+        <proximal x="-194.128" y="-171.009" z="0" diameter="0.77"/>
+        <distal x="-164.947" y="-188.517" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[8] (segmentGroup: dend8_8) which has 2 3D points, so 1 segment(s)-->
+      <segment id="78" name = "Seg0_dend8_8">
+        <parent segment="76"/>
+        <proximal x="49.4123" y="-252.954" z="0" diameter="0.64"/>
+        <distal x="49.4123" y="-316.314" z="0" diameter="0.64"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[19] (segmentGroup: dend1_19) which has 2 3D points, so 1 segment(s)-->
+      <segment id="59" name = "Seg0_dend1_19">
+        <parent segment="55"/>
+        <proximal x="-204.051" y="-174.316" z="0" diameter="0.77"/>
+        <distal x="-305.796" y="-194.665" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend1[18] (segmentGroup: dend1_18) which has 2 3D points, so 1 segment(s)-->
+      <segment id="58" name = "Seg0_dend1_18">
+        <parent segment="55"/>
+        <proximal x="-204.051" y="-174.316" z="0" diameter="0.77"/>
+        <distal x="-212.119" y="-190.452" z="0" diameter="0.77"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[10] (segmentGroup: dend8_10) which has 2 3D points, so 1 segment(s)-->
+      <segment id="80" name = "Seg0_dend8_10">
+        <parent segment="78"/>
+        <proximal x="49.4123" y="-316.314" z="0" diameter="0.64"/>
+        <distal x="24.6724" y="-328.684" z="0" diameter="0.64"/>
+      </segment>
+<!-- Section: OLMSaraga_Case2[0].dend8[9] (segmentGroup: dend8_9) which has 2 3D points, so 1 segment(s)-->
+      <segment id="79" name = "Seg0_dend8_9">
+        <parent segment="78"/>
+        <proximal x="49.4123" y="-316.314" z="0" diameter="0.64"/>
+        <distal x="61.0866" y="-327.988" z="0" diameter="0.64"/>
+      </segment>
+
+<!-- Section: OLMSaraga_Case2[0].soma[0] (segmentGroup: soma_0) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "soma_0"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "0"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend2[0] (segmentGroup: dend2_0) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend2_0"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "10"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].soma[1] (segmentGroup: soma_1) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "soma_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "2"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[0] (segmentGroup: dend4_0) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_0"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "16"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].soma[2] (segmentGroup: soma_2) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "soma_2"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "3"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend3[0] (segmentGroup: dend3_0) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend3_0"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="9"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="9"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "38"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend2[1] (segmentGroup: dend2_1) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend2_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="9"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="9"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "11"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[0] (segmentGroup: dend1_0) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_0"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="10"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="10"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "40"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].soma[3] (segmentGroup: soma_3) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "soma_3"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "4"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[2] (segmentGroup: dend4_2) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_2"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "18"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[1] (segmentGroup: dend4_1) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "17"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].soma[4] (segmentGroup: soma_4) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "soma_4"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "5"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend3[1] (segmentGroup: dend3_1) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend3_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="9"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="9"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "39"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend2[3] (segmentGroup: dend2_3) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend2_3"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "13"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend2[2] (segmentGroup: dend2_2) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend2_2"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="10"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="10"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "12"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[2] (segmentGroup: dend1_2) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_2"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="6"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="6"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "42"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[1] (segmentGroup: dend1_1) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "41"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend7[0] (segmentGroup: dend7_0) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend7_0"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "60"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].soma[5] (segmentGroup: soma_5) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "soma_5"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "6"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[6] (segmentGroup: dend4_6) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_6"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="11"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="11"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "22"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[5] (segmentGroup: dend4_5) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_5"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="12"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="12"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "21"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[4] (segmentGroup: dend4_4) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_4"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "20"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[3] (segmentGroup: dend4_3) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_3"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "19"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].soma[6] (segmentGroup: soma_6) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "soma_6"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "7"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend2[5] (segmentGroup: dend2_5) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend2_5"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "15"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend2[4] (segmentGroup: dend2_4) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend2_4"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="11"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="11"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "14"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[5] (segmentGroup: dend1_5) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_5"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "45"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[4] (segmentGroup: dend1_4) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_4"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="14"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="14"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "44"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[3] (segmentGroup: dend1_3) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_3"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "43"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend7[1] (segmentGroup: dend7_1) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend7_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "61"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].soma[7] (segmentGroup: soma_7) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "soma_7"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "8"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[12] (segmentGroup: dend4_12) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_12"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "28"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[11] (segmentGroup: dend4_11) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_11"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="5"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="5"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "27"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[10] (segmentGroup: dend4_10) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_10"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "26"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[9] (segmentGroup: dend4_9) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_9"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="14"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="14"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "25"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[8] (segmentGroup: dend4_8) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_8"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="8"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="8"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "24"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[7] (segmentGroup: dend4_7) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_7"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "23"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].soma[8] (segmentGroup: soma_8) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "soma_8"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "9"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[9] (segmentGroup: dend1_9) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_9"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "49"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[8] (segmentGroup: dend1_8) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_8"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="15"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="15"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "48"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[7] (segmentGroup: dend1_7) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_7"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "47"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[6] (segmentGroup: dend1_6) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_6"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="6"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="6"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "46"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend7[3] (segmentGroup: dend7_3) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend7_3"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="6"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="6"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "63"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend7[2] (segmentGroup: dend7_2) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend7_2"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "62"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[20] (segmentGroup: dend4_20) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_20"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="8"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="8"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "36"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[19] (segmentGroup: dend4_19) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_19"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "35"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[18] (segmentGroup: dend4_18) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_18"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="5"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="5"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "34"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[17] (segmentGroup: dend4_17) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_17"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "33"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[16] (segmentGroup: dend4_16) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_16"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "32"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[15] (segmentGroup: dend4_15) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_15"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "31"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[14] (segmentGroup: dend4_14) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_14"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "30"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[13] (segmentGroup: dend4_13) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_13"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="6"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="6"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "29"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend5 (segmentGroup: dend5) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend5"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "84"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend6[0] (segmentGroup: dend6_0) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend6_0"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "81"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[0] (segmentGroup: dend8_0) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_0"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "70"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[10] (segmentGroup: dend1_10) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_10"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "50"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend7[8] (segmentGroup: dend7_8) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend7_8"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="13"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="13"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "68"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend7[7] (segmentGroup: dend7_7) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend7_7"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="5"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="5"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "67"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend7[6] (segmentGroup: dend7_6) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend7_6"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "66"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend7[5] (segmentGroup: dend7_5) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend7_5"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="9"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="9"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "65"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend7[4] (segmentGroup: dend7_4) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend7_4"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "64"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend4[21] (segmentGroup: dend4_21) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend4_21"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "37"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend6[2] (segmentGroup: dend6_2) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend6_2"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="12"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="12"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "83"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend6[1] (segmentGroup: dend6_1) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend6_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "82"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[4] (segmentGroup: dend8_4) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_4"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "74"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[3] (segmentGroup: dend8_3) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_3"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "73"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[2] (segmentGroup: dend8_2) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_2"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="12"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="12"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "72"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[1] (segmentGroup: dend8_1) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_1"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "71"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[11] (segmentGroup: dend1_11) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_11"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <member segment = "51"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend7[9] (segmentGroup: dend7_9) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend7_9"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="9"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="9"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "69"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[5] (segmentGroup: dend8_5) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_5"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "75"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[13] (segmentGroup: dend1_13) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_13"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="11"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="11"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "53"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[12] (segmentGroup: dend1_12) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_12"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "52"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[7] (segmentGroup: dend8_7) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_7"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="6"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="6"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "77"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[6] (segmentGroup: dend8_6) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_6"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="5"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="5"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "76"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[17] (segmentGroup: dend1_17) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_17"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "57"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[16] (segmentGroup: dend1_16) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_16"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "56"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[15] (segmentGroup: dend1_15) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_15"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "55"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[14] (segmentGroup: dend1_14) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_14"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="4"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "54"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[8] (segmentGroup: dend8_8) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_8"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="7"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "78"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[19] (segmentGroup: dend1_19) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_19"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="11"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="11"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "59"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend1[18] (segmentGroup: dend1_18) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend1_18"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "58"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[10] (segmentGroup: dend8_10) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_10"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="3"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "80"/>
+      </segmentGroup>
+
+
+<!-- Section: OLMSaraga_Case2[0].dend8[9] (segmentGroup: dend8_9) which has 2 3D points, so 1 segment(s)-->
+
+      <segmentGroup id = "dend8_9"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+        <!-- This is currently inside (old convention) & outside (new convention) the <annotation> element, as some APIs have trouble reading what's inside <annotation> (<xs:any..> in Schema) -->
+        <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        <annotation>
+          <property tag="numberInternalDivisions" value="2"/> <!-- Discretization of model at time of export from NEURON. Can be overridden by importing application -->
+        </annotation>
+        <member segment = "79"/>
+      </segmentGroup>
+
+      <segmentGroup id="all"> <!-- Replacing subset name ModelViewParmSubset_0 with all, as it contains all sections -->
+        <include segmentGroup = "soma_0"/>
+        <include segmentGroup = "dend2_0"/>
+        <include segmentGroup = "soma_1"/>
+        <include segmentGroup = "dend4_0"/>
+        <include segmentGroup = "soma_2"/>
+        <include segmentGroup = "dend3_0"/>
+        <include segmentGroup = "dend2_1"/>
+        <include segmentGroup = "dend1_0"/>
+        <include segmentGroup = "soma_3"/>
+        <include segmentGroup = "dend4_2"/>
+        <include segmentGroup = "dend4_1"/>
+        <include segmentGroup = "soma_4"/>
+        <include segmentGroup = "dend3_1"/>
+        <include segmentGroup = "dend2_3"/>
+        <include segmentGroup = "dend2_2"/>
+        <include segmentGroup = "dend1_2"/>
+        <include segmentGroup = "dend1_1"/>
+        <include segmentGroup = "dend7_0"/>
+        <include segmentGroup = "soma_5"/>
+        <include segmentGroup = "dend4_6"/>
+        <include segmentGroup = "dend4_5"/>
+        <include segmentGroup = "dend4_4"/>
+        <include segmentGroup = "dend4_3"/>
+        <include segmentGroup = "soma_6"/>
+        <include segmentGroup = "dend2_5"/>
+        <include segmentGroup = "dend2_4"/>
+        <include segmentGroup = "dend1_5"/>
+        <include segmentGroup = "dend1_4"/>
+        <include segmentGroup = "dend1_3"/>
+        <include segmentGroup = "dend7_1"/>
+        <include segmentGroup = "soma_7"/>
+        <include segmentGroup = "dend4_12"/>
+        <include segmentGroup = "dend4_11"/>
+        <include segmentGroup = "dend4_10"/>
+        <include segmentGroup = "dend4_9"/>
+        <include segmentGroup = "dend4_8"/>
+        <include segmentGroup = "dend4_7"/>
+        <include segmentGroup = "soma_8"/>
+        <include segmentGroup = "dend1_9"/>
+        <include segmentGroup = "dend1_8"/>
+        <include segmentGroup = "dend1_7"/>
+        <include segmentGroup = "dend1_6"/>
+        <include segmentGroup = "dend7_3"/>
+        <include segmentGroup = "dend7_2"/>
+        <include segmentGroup = "dend4_20"/>
+        <include segmentGroup = "dend4_19"/>
+        <include segmentGroup = "dend4_18"/>
+        <include segmentGroup = "dend4_17"/>
+        <include segmentGroup = "dend4_16"/>
+        <include segmentGroup = "dend4_15"/>
+        <include segmentGroup = "dend4_14"/>
+        <include segmentGroup = "dend4_13"/>
+        <include segmentGroup = "dend5"/>
+        <include segmentGroup = "dend6_0"/>
+        <include segmentGroup = "dend8_0"/>
+        <include segmentGroup = "dend1_10"/>
+        <include segmentGroup = "dend7_8"/>
+        <include segmentGroup = "dend7_7"/>
+        <include segmentGroup = "dend7_6"/>
+        <include segmentGroup = "dend7_5"/>
+        <include segmentGroup = "dend7_4"/>
+        <include segmentGroup = "dend4_21"/>
+        <include segmentGroup = "dend6_2"/>
+        <include segmentGroup = "dend6_1"/>
+        <include segmentGroup = "dend8_4"/>
+        <include segmentGroup = "dend8_3"/>
+        <include segmentGroup = "dend8_2"/>
+        <include segmentGroup = "dend8_1"/>
+        <include segmentGroup = "dend1_11"/>
+        <include segmentGroup = "dend7_9"/>
+        <include segmentGroup = "dend8_5"/>
+        <include segmentGroup = "dend1_13"/>
+        <include segmentGroup = "dend1_12"/>
+        <include segmentGroup = "dend8_7"/>
+        <include segmentGroup = "dend8_6"/>
+        <include segmentGroup = "dend1_17"/>
+        <include segmentGroup = "dend1_16"/>
+        <include segmentGroup = "dend1_15"/>
+        <include segmentGroup = "dend1_14"/>
+        <include segmentGroup = "dend8_8"/>
+        <include segmentGroup = "dend1_19"/>
+        <include segmentGroup = "dend1_18"/>
+        <include segmentGroup = "dend8_10"/>
+        <include segmentGroup = "dend8_9"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_1"> 
+        <include segmentGroup = "soma_0"/>
+        <include segmentGroup = "soma_1"/>
+        <include segmentGroup = "soma_2"/>
+        <include segmentGroup = "soma_3"/>
+        <include segmentGroup = "soma_4"/>
+        <include segmentGroup = "soma_5"/>
+        <include segmentGroup = "soma_6"/>
+        <include segmentGroup = "soma_7"/>
+        <include segmentGroup = "soma_8"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_2"> 
+        <include segmentGroup = "dend2_0"/>
+        <include segmentGroup = "dend4_0"/>
+        <include segmentGroup = "dend3_0"/>
+        <include segmentGroup = "dend2_1"/>
+        <include segmentGroup = "dend1_0"/>
+        <include segmentGroup = "dend4_2"/>
+        <include segmentGroup = "dend4_1"/>
+        <include segmentGroup = "dend3_1"/>
+        <include segmentGroup = "dend2_3"/>
+        <include segmentGroup = "dend2_2"/>
+        <include segmentGroup = "dend1_2"/>
+        <include segmentGroup = "dend1_1"/>
+        <include segmentGroup = "dend7_0"/>
+        <include segmentGroup = "dend4_6"/>
+        <include segmentGroup = "dend4_5"/>
+        <include segmentGroup = "dend4_4"/>
+        <include segmentGroup = "dend4_3"/>
+        <include segmentGroup = "dend2_5"/>
+        <include segmentGroup = "dend2_4"/>
+        <include segmentGroup = "dend1_5"/>
+        <include segmentGroup = "dend1_4"/>
+        <include segmentGroup = "dend1_3"/>
+        <include segmentGroup = "dend7_1"/>
+        <include segmentGroup = "dend4_12"/>
+        <include segmentGroup = "dend4_11"/>
+        <include segmentGroup = "dend4_10"/>
+        <include segmentGroup = "dend4_9"/>
+        <include segmentGroup = "dend4_8"/>
+        <include segmentGroup = "dend4_7"/>
+        <include segmentGroup = "dend1_9"/>
+        <include segmentGroup = "dend1_8"/>
+        <include segmentGroup = "dend1_7"/>
+        <include segmentGroup = "dend1_6"/>
+        <include segmentGroup = "dend7_3"/>
+        <include segmentGroup = "dend7_2"/>
+        <include segmentGroup = "dend4_20"/>
+        <include segmentGroup = "dend4_19"/>
+        <include segmentGroup = "dend4_18"/>
+        <include segmentGroup = "dend4_17"/>
+        <include segmentGroup = "dend4_16"/>
+        <include segmentGroup = "dend4_15"/>
+        <include segmentGroup = "dend4_14"/>
+        <include segmentGroup = "dend4_13"/>
+        <include segmentGroup = "dend5"/>
+        <include segmentGroup = "dend6_0"/>
+        <include segmentGroup = "dend8_0"/>
+        <include segmentGroup = "dend1_10"/>
+        <include segmentGroup = "dend7_8"/>
+        <include segmentGroup = "dend7_7"/>
+        <include segmentGroup = "dend7_6"/>
+        <include segmentGroup = "dend7_5"/>
+        <include segmentGroup = "dend7_4"/>
+        <include segmentGroup = "dend4_21"/>
+        <include segmentGroup = "dend6_2"/>
+        <include segmentGroup = "dend6_1"/>
+        <include segmentGroup = "dend8_4"/>
+        <include segmentGroup = "dend8_3"/>
+        <include segmentGroup = "dend8_2"/>
+        <include segmentGroup = "dend8_1"/>
+        <include segmentGroup = "dend1_11"/>
+        <include segmentGroup = "dend7_9"/>
+        <include segmentGroup = "dend8_5"/>
+        <include segmentGroup = "dend1_13"/>
+        <include segmentGroup = "dend1_12"/>
+        <include segmentGroup = "dend8_7"/>
+        <include segmentGroup = "dend8_6"/>
+        <include segmentGroup = "dend1_17"/>
+        <include segmentGroup = "dend1_16"/>
+        <include segmentGroup = "dend1_15"/>
+        <include segmentGroup = "dend1_14"/>
+        <include segmentGroup = "dend8_8"/>
+        <include segmentGroup = "dend1_19"/>
+        <include segmentGroup = "dend1_18"/>
+        <include segmentGroup = "dend8_10"/>
+        <include segmentGroup = "dend8_9"/>
+      </segmentGroup>
+
+    </morphology>
+
+    <!-- Biophysical properties -->
+
+    <biophysicalProperties id="biophys"> 
+
+      <membraneProperties> 
+
+        <channelDensity ionChannel="IA" id="IA_XXX"  condDensity = "16.5 mS_per_cm2" segmentGroup="ModelViewParmSubset_1"  erev="-100.000000mV" />
+
+        <channelDensity ionChannel="Ih" id="Ih_XXX"  condDensity = "1.385 mS_per_cm2" segmentGroup="ModelViewParmSubset_1"  erev="-32.900000mV" />
+
+        <channelDensity ionChannel="Kdend" id="Kdend_XXX"  condDensity = "23 mS_per_cm2" segmentGroup="ModelViewParmSubset_2"  erev="-100.000000mV" />
+
+        <channelDensity ionChannel="Ksoma" id="Ksoma_XXX"  condDensity = "31.9 mS_per_cm2" segmentGroup="ModelViewParmSubset_1"  erev="-100.000000mV" />
+
+        <channelDensity ionChannel="Nadend" id="Nadend_XXX"  condDensity = "11.7 mS_per_cm2" segmentGroup="ModelViewParmSubset_2"  erev="90.000000mV" />
+
+        <channelDensity ionChannel="Nadend" id="Nadend_XXX"  condDensity = "0.05 mS_per_cm2" segmentGroup="ModelViewParmSubset_2"  erev="90.000000mV" />
+
+        <channelDensity ionChannel="Nasoma" id="Nasoma_XXX"  condDensity = "10.7 mS_per_cm2" segmentGroup="ModelViewParmSubset_1"  erev="90.000000mV" />
+
+        <channelDensity ionChannel="Nasoma" id="Nasoma_XXX"  condDensity = "0.05 mS_per_cm2" segmentGroup="ModelViewParmSubset_1"  erev="90.000000mV" />
+
+        <specificCapacitance  value="1.3 uF_per_cm2" />
+
+      </membraneProperties> 
+
+      <intracellularProperties>
+
+        <resistivity value="0.15 kohm_cm" />
+
+      </intracellularProperties>
+
+    </biophysicalProperties>
+
+  </cell> 
+
+  <network id="network" type="networkWithTemperature" temperature="24 degC">
+    <population id="Pop_OLMSaraga_Case2_0_0" component="OLMSaraga_Case2_0_0" size="1" type="populationList">
+        <instance id="0">
+            <location x="0" y="0" z="0"/>
+        </instance>
+    </population>
+  </network>
+ 
+</neuroml>
