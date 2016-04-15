@@ -4,3 +4,17 @@ x86_64
 /NEURON/Ksoma.n.tau.dat
 /NEURON/saragaolm.dat
 /NeuroML2/SaragaOLM_Case2.cell.svg
+/NeuroML2/IA.mod
+/NeuroML2/IClamp_nml2.mod
+/NeuroML2/Ih.mod
+/NeuroML2/Kdend.mod
+/NeuroML2/Ksoma.mod
+/NeuroML2/LEMS_SaragaOLM_Case2_nrn.py
+/NeuroML2/Nadend.mod
+/NeuroML2/Nasoma.mod
+/NeuroML2/OLMSaraga_Case2_0_0.hoc
+/NeuroML2/SaragaOLM_Case2.hoc
+/NeuroML2/SaragaOLM_Case2.net.svg
+/NeuroML2/pas_nml2.mod
+/NeuroML2/saragaolm.dat
+/NeuroML2/time.dat
