@@ -1,4 +1,4 @@
-begintemplate OLMSaraga_Case2
+begintemplate SaragaOLM_Case2
 
 public init, all, Soma, Dendrites, soma, dend1, dend2, dend3, dend4, dend5, dend6, dend7, dend8
 
@@ -464,5 +464,5 @@ proc biophys() {
   }
 }
 
-endtemplate OLMSaraga_Case2
+endtemplate SaragaOLM_Case2
 

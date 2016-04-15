@@ -6,7 +6,7 @@ load_file("SaragaOLM_Case2.ses")
 
 objectvar OLMcells[1]
 
-OLMcells[0] = new OLMSaraga_Case2()
+OLMcells[0] = new SaragaOLM_Case2()
 
 forall{
 	celsius = 24
@@ -18,8 +18,8 @@ forall{
 
 v_init = -73
 t = 0
-dt = 0.001
-steps_per_ms = 1000
+dt = 0.01
+steps_per_ms = 100
 tstop = 200
 
 objectvar stim[1]
