@@ -11,7 +11,7 @@
 
 <!-- Additional leak conductance (in the original version Nasoma contains it)--> 
 
-    <ionChannelHH id="leak" conductance="0.05nS" />
+    <ionChannelHH id="leak" conductance="0.05nS" species="non_specific"/>
     
 <!-- Cellular properties -->
 
