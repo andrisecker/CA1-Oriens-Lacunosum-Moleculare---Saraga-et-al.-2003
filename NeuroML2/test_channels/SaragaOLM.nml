@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta2.xsd" 
          id="olm1">
     
-    <Include file="../Nasoma.nml"/>
-    <Include file="../Ksoma.nml"/>
-    <Include file="../IA.nml"/>
-    <Include file="../Ih.nml"/>
+    <Include file="../Nasoma.channel.nml"/>
+    <Include file="../Ksoma.channel.nml"/>
+    <Include file="../IA.channel.nml"/>
+    <Include file="../Ih.channel.nml"/>
 
 <!-- Additional leak conductance (in the original version Nasoma contains it)--> 
 
