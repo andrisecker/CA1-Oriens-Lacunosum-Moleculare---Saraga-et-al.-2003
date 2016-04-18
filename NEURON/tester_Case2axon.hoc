@@ -1,0 +1,40 @@
+load_file("nrngui.hoc")
+load_file("SaragaOLM_Case2axon.hoc")
+load_file("SaragaOLM_Case2axon.ses")
+
+// ======================================================
+
+objectvar OLMcells[1]
+
+OLMcells[0] = new SaragaOLM_Case2axon()
+
+forall{
+	celsius = 24
+	insert na_ion ena = 90
+	insert k_ion ek = -100
+	insert h_ion eh = -32.9
+}
+
+v_init = -70
+t = 0
+dt = 0.01
+steps_per_ms = 100
+tstop = 500
+
+objectvar stim[2]
+
+OLMcells[0].soma[0] {
+    stim[0] = new IClamp(0.5)
+    stim[0].del = 0
+    stim[0].dur = 500
+    stim[0].amp = -0.05
+    
+    stim[1] = new IClamp(0.5)
+    stim[1].del = 400
+    stim[1].dur = 100
+    stim[1].amp = 0.1
+}
+
+// ======================================================
+
+load_file("dump.hoc")
