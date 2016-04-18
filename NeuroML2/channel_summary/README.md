@@ -5,7 +5,7 @@ Channel information
 
 <table>
     <tr>
-<td width="120px">
+<td width="200px">
             <sup><b>Nasoma</b><br/>
             <a href="../Nasoma.channel.nml">Nasoma.channel.nml</a><br/>
             <b>Ion: na</b><br/>
@@ -21,7 +21,7 @@ Channel information
 </td>
 </tr>
     <tr>
-<td width="120px">
+<td width="200px">
             <sup><b>Nadend</b><br/>
             <a href="../Nadend.channel.nml">Nadend.channel.nml</a><br/>
             <b>Ion: na</b><br/>
@@ -37,7 +37,7 @@ Channel information
 </td>
 </tr>
     <tr>
-<td width="120px">
+<td width="200px">
             <sup><b>Ksoma</b><br/>
             <a href="../Ksoma.channel.nml">Ksoma.channel.nml</a><br/>
             <b>Ion: k</b><br/>
@@ -52,7 +52,7 @@ Channel information
 </td>
 </tr>
     <tr>
-<td width="120px">
+<td width="200px">
             <sup><b>Kdend</b><br/>
             <a href="../Kdend.channel.nml">Kdend.channel.nml</a><br/>
             <b>Ion: k</b><br/>
@@ -67,7 +67,7 @@ Channel information
 </td>
 </tr>
     <tr>
-<td width="120px">
+<td width="200px">
             <sup><b>IA</b><br/>
             <a href="../IA.channel.nml">IA.channel.nml</a><br/>
             <b>Ion: k</b><br/>
@@ -84,7 +84,7 @@ Channel information
 </td>
 </tr>
     <tr>
-<td width="120px">
+<td width="200px">
             <sup><b>Ih</b><br/>
             <a href="../Ih.channel.nml">Ih.channel.nml</a><br/>
             <b>Ion: h</b><br/>
