@@ -6,8 +6,8 @@
     
     <include href="Nasoma.channel.nml"/>
     <include href="Nadend.channel.nml"/>
-    <include href="Ksoma.channel.nml"/>
-    <include href="Kdend.channel.nml"/>
+    <include href="Ksoma.channel.nml"/> 
+   <include href="Kdend.channel.nml"/>
     <include href="IA.channel.nml"/>
     <include href="Ih.channel.nml"/>
     <include href="pas.channel.nml"/>
