@@ -7,7 +7,7 @@
         
         <gateHHtauInf id="r" instances="1">
             <timeCourse type="Saraga2003_Ih_tau"/>
-            <steadyState type="HHSigmoidVariable" rate="1" midpoint="-84.1mV" scale="-10.2V"/>
+            <steadyState type="HHSigmoidVariable" rate="1" midpoint="-84.1mV" scale="-10.2mV"/>
         </gateHHtauInf>
     
     </ionChannel>
