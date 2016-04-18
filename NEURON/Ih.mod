@@ -97,7 +97,7 @@ DERIVATIVE deriv { :Computes state variable h at current v and dt.
 PROCEDURE rates(v) {  :Computes rate and other constants at current v.
                       :Call once from HOC to initialize inf at resting v.
         TABLE rinf, rexp, tau_r DEPEND dt, p FROM -200
-TO 100 WITH 300
+TO 100 WITH 3000
 	rinf = 1/(1 + exp((v+84.1)/10.2))
 	rexp = 1 - exp(-dt/(tau_r))
 	tau_r = 100 + 1/(exp(-17.9-0.116*v)+exp(-1.84+0.09*v))

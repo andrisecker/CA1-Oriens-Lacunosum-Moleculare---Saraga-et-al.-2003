@@ -438,6 +438,9 @@ proc geom_nseg() {
 }
 
 proc biophys() {
+  forall {
+  nseg = L/10+1
+  }
   forsec all {
     Ra = 150
     cm = 1.3
