@@ -11,7 +11,7 @@ Channel information
             <b>Ion: na</b><br/>
             <i>g = gmax m_inf<sup>3</sup> * h </i><br/>
             Na+ current
-            reference of the original .mod file: Martina, Jonas (1997); Martina, Vilda, Jonas (2000)
+            Reference: Martina, Jonas (1997); Martina, Vilda, Jonas (2000)
 </td>
 <td>
 <a href="Nasoma.inf.png"><img alt="Nasoma steady state" src="Nasoma.inf.png" height="220"/></a>
@@ -26,8 +26,8 @@ Channel information
             <a href="../Nadend.channel.nml">Nadend.channel.nml</a><br/>
             <b>Ion: na</b><br/>
             <i>g = gmax * m_inf<sup>3</sup> * h </i><br/>
-            Na+ current
-            reference of the original .mod file: Martina, Jonas (1997); Martina, Vilda, Jonas (2000)
+            Na+ current;
+            Reference: Martina, Jonas (1997); Martina, Vilda, Jonas (2000)
 </td>
 <td>
 <a href="Nadend.inf.png"><img alt="Nadend steady state" src="Nadend.inf.png" height="220"/></a>
@@ -72,8 +72,8 @@ Channel information
             <a href="../IA.channel.nml">IA.channel.nml</a><br/>
             <b>Ion: k</b><br/>
             <i>g = gmax * a * b </i><br/>
-            K+ current 
-            reference: Warman (1994); Zhang McBain (1995); Martina (1998) 
+            A type K+ current;
+            Reference: Warman (1994); Zhang McBain (1995); Martina (1998) 
 
 </td>
 <td>
@@ -90,8 +90,8 @@ Channel information
             <b>Ion: h</b><br/>
             <i>g = gmax * r </i><br/>
             Hyperpolarization activated non-specific cation current
-            (contributes to the resting potential, controls the afterhyperpolarization)
-            reference: Maccaferri et al. (1993); Maccaferri and McBain (1996); Pape (1996); Magee (1998)
+            (contributes to the resting potential, controls the afterhyperpolarization);
+            Reference: Maccaferri et al. (1993); Maccaferri and McBain (1996); Pape (1996); Magee (1998)
             
 </td>
 <td>
