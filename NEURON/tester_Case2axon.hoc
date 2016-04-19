@@ -1,6 +1,8 @@
 load_file("nrngui.hoc")
 load_file("SaragaOLM_Case2axon.hoc")
 load_file("SaragaOLM_Case2axon.ses")
+//load_file("cellCheck.hoc")
+//load_file("nCtools.hoc")
 
 // ======================================================
 
@@ -31,8 +33,8 @@ OLMcells[0].soma[0] {
     
     stim[1] = new IClamp(0.5)
     stim[1].del = 400
-    stim[1].dur = 100
-    stim[1].amp = 0.1
+    stim[1].dur = 0.1
+    stim[1].amp = 10
 }
 
 // ======================================================

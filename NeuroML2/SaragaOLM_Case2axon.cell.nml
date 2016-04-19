@@ -16,7 +16,7 @@
 
   <cell id="SaragaOLM_Case2axon">
       
-    <notes>Cell: SaragaOLM_Case2axon_0_0 exported from NEURON ModelView</notes>
+    <notes>Cell: SaragaOLM_Case2axon exported from NEURON ModelView</notes>
     
     <morphology id="morphology">
 <!-- Section: SaragaOLM_Case2axon[0].soma[0] (segmentGroup: soma_0) which has 2 3D points, so 1 segment(s)-->
@@ -105,8 +105,8 @@
 <!-- Section: SaragaOLM_Case2axon[0].axon[0] (segmentGroup: axon_0) which has 2 3D points, so 1 segment(s)-->
       <segment id="85" name = "Seg0_axon_0">
         <parent segment="38"/>
-        <proximal x="-10" y="-125" z="0" diameter="2"/>
-        <distal x="54.312" y="-86.4128" z="0" diameter="2"/>
+        <proximal x="-11.08" y="-126.28" z="0" diameter="2"/>
+        <distal x="53.231972" y="-87.692818" z="0" diameter="2"/>
       </segment>
 <!-- Section: SaragaOLM_Case2axon[0].dend4[2] (segmentGroup: dend4_2) which has 2 3D points, so 1 segment(s)-->
       <segment id="40" name = "Seg0_dend4_2">
@@ -159,8 +159,8 @@
 <!-- Section: SaragaOLM_Case2axon[0].axon[1] (segmentGroup: axon_1) which has 2 3D points, so 1 segment(s)-->
       <segment id="86" name = "Seg0_axon_1">
         <parent segment="85"/>
-        <proximal x="0" y="-119" z="0" diameter="1"/>
-        <distal x="75" y="-119" z="0" diameter="1"/>
+        <proximal x="53.231972" y="-87.692818" z="0" diameter="1"/>
+        <distal x="128.23196" y="-87.692818" z="0" diameter="1"/>
       </segment>
 <!-- Section: SaragaOLM_Case2axon[0].dend4[6] (segmentGroup: dend4_6) which has 2 3D points, so 1 segment(s)-->
       <segment id="44" name = "Seg0_dend4_6">

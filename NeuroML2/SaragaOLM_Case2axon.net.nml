@@ -9,7 +9,7 @@
     <!-- Point process: Current clamp -->
      
     <pulseGenerator id="IClamp0" delay="0ms" duration="500ms" amplitude="-0.05nA" />
-    <pulseGenerator id="IClamp1" delay="400ms" duration="100ms" amplitude="0.1nA" />
+    <pulseGenerator id="IClamp1" delay="400ms" duration="0.1ms" amplitude="10nA" />
     
     <!-- Create a single-cell network -->
 
