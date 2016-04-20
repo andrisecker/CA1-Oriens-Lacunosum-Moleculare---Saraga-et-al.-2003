@@ -4,11 +4,11 @@
     <notes>ChannelML file containing a single Channel description from Saraga et al 2003</notes>
 
     <ionChannel id="Nadend" conductance="117pS" type="ionChannelHH" species="na">
-        
-        <gateHHratesInstantaneous_Nadend id="m" instances="3">
+
+        <gateHHrates type="gateHHratesInstantaneous_Nadend" id="m" instances="3">
             <forwardRate type="HHExpLinearRate" rate="1per_ms" midpoint="-45mV" scale="10mV"/>
             <reverseRate type="HHExpRate" rate="4per_ms" midpoint="-70mV" scale="-18mV"/>
-        </gateHHratesInstantaneous_Nadend>
+        </gateHHrates>
     
         <gateHHrates id="h" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
@@ -17,8 +17,8 @@
         </gateHHrates>
                             
     </ionChannel>
-    
-    
+
+
     <ComponentType name="gateHHratesInstantaneous_Nadend"
                    extends="gateHHrates"
                    description="Gate which follows the general Hodgkin Huxley formalism, except for tau = 0">
@@ -43,13 +43,13 @@
             <DerivedVariable name="alpha" dimension="per_time" exposure="alpha" select="forwardRate/r"/>
             <DerivedVariable name="beta" dimension="per_time" exposure="beta" select="reverseRate/r"/>
 
-            <DerivedVariable name="inf" dimension="none" exposure="inf" value="alpha/(alpha+beta)"/>
+            <DerivedVariable name="rateScale" exposure="rateScale" dimension="none" value="1"/>
 
-            <DerivedVariable name="tau" dimension="time" exposure="tau" value="0 * SEC"/>
+            <DerivedVariable name="tau" dimension="time" exposure="tau" value="1/((alpha+beta) * rateScale)"/>
+
+            <DerivedVariable name="inf" dimension="none" exposure="inf" value="alpha * tau"/>
 
             <DerivedVariable name="q"  exposure="q" dimension="none" value="inf"/>
-            
-            <DerivedVariable name="rateScale" exposure="rateScale" dimension="none" value="1"/>
 
             <DerivedVariable name="fcond" exposure="fcond" dimension="none" value="q^instances"/>
 
@@ -58,7 +58,7 @@
     </ComponentType>
     
     <!--  Original NEURON version:
-    <ComponentType name="Saraga2003_INa_rate"
+    <ComponentType name="Saraga2003_INa_alpham"
                    extends="baseHHRate"
                    description="conditional ExpLinearRate to describe INa in Saraga 2003">
 
@@ -77,6 +77,6 @@
         </Dynamics>
 
     </ComponentType>
-    -->
+     -->
 
 </neuroml>

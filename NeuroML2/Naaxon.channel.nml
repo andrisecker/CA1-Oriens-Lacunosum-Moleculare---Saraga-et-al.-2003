@@ -5,10 +5,10 @@
 
     <ionChannel id="Naaxon" conductance="16.05pS" type="ionChannelHH" species="na">
         
-        <gateHHratesInstantaneous_Naaxon id="m" instances="3">
+        <gateHHrates type="gateHHratesInstantaneous_Naaxon" id="m" instances="3">
             <forwardRate type="HHExpLinearRate" rate="1per_ms" midpoint="-38mV" scale="10mV"/>
             <reverseRate type="HHExpRate" rate="4per_ms" midpoint="-63mV" scale="-18mV"/>  <!-- article: midpoint: -65mV-->
-        </gateHHratesInstantaneous_Naaxon>
+        </gateHHrates>
     
         <gateHHrates id="h" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="24 degC"/>
@@ -43,13 +43,13 @@
             <DerivedVariable name="alpha" dimension="per_time" exposure="alpha" select="forwardRate/r"/>
             <DerivedVariable name="beta" dimension="per_time" exposure="beta" select="reverseRate/r"/>
 
-            <DerivedVariable name="inf" dimension="none" exposure="inf" value="alpha/(alpha+beta)"/>
+            <DerivedVariable name="rateScale" exposure="rateScale" dimension="none" value="1"/>
 
-            <DerivedVariable name="tau" dimension="time" exposure="tau" value="0 * SEC"/>
+            <DerivedVariable name="tau" dimension="time" exposure="tau" value="1/((alpha+beta) * rateScale)"/>
+
+            <DerivedVariable name="inf" dimension="none" exposure="inf" value="alpha * tau"/>
 
             <DerivedVariable name="q"  exposure="q" dimension="none" value="inf"/>
-            
-            <DerivedVariable name="rateScale" exposure="rateScale" dimension="none" value="1"/>
 
             <DerivedVariable name="fcond" exposure="fcond" dimension="none" value="q^instances"/>
 
