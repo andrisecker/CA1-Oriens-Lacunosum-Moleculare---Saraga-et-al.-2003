@@ -18,7 +18,7 @@
     <Include file="Kdend.channel.nml"/>
     <Include file="IA.channel.nml"/>
     <Include file="Ih.channel.nml"/>
-    <Include file="pas.channel.nml"/>
+    <Include file="leak_chan.channel.nml"/>
  
 <!-- Simulation specifications -->
 

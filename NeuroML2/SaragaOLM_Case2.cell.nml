@@ -7,10 +7,10 @@
     <include href="Nasoma.channel.nml"/>
     <include href="Nadend.channel.nml"/>
     <include href="Ksoma.channel.nml"/> 
-   <include href="Kdend.channel.nml"/>
+    <include href="Kdend.channel.nml"/>
     <include href="IA.channel.nml"/>
     <include href="Ih.channel.nml"/>
-    <include href="pas.channel.nml"/>
+    <include href="leak_chan.channel.nml"/>
 
   <cell id="SaragaOLM_Case2">
       
@@ -1896,11 +1896,11 @@
 
       <membraneProperties> 
           
-        <channelDensity ionChannel="pas" id="passive_all" condDensity="0.05mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/> <!-- 0.05 -->
+        <channelDensity ionChannel="leak_chan" id="leak_chan_all" condDensity="0.05mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/> <!-- 0.05 -->
 
         <channelDensity ionChannel="IA" id="IA_soma_group" condDensity="16.5mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> <!-- 16.5 -->
 
-        <channelDensity ionChannel="Ih" id="Ih_soma_group" condDensity="1.358mS_per_cm2" segmentGroup="soma_group"  erev="-32.9mV" ion="h"/> <!-- 1.385 -->
+        <channelDensity ionChannel="Ih" id="Ih_soma_group" condDensity="1.385mS_per_cm2" segmentGroup="soma_group"  erev="-32.9mV" ion="h"/> <!-- 1.385 -->
 
         <channelDensity ionChannel="Kdend" id="Kdend_dendrite_group" condDensity="23mS_per_cm2" segmentGroup="dendrite_group"  erev="-100mV" ion="k"/> <!-- 23 -->
 

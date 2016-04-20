@@ -20,7 +20,7 @@
     <Include file="Kaxon.channel.nml"/>
     <Include file="IA.channel.nml"/>
     <Include file="Ih.channel.nml"/>
-    <Include file="pas.channel.nml"/>
+    <Include file="leak_chan.channel.nml"/>
  
 <!-- Simulation specifications -->
 
@@ -28,8 +28,8 @@
 
         <Display id="d1" title="Saraga 2003 CA1 OLM cell with 0.1nA input" timeScale="1ms" xmin="-10" xmax="210" ymin="-85" ymax="55">
             <Line id="OLM soma[0].v(0.5)" quantity="Pop_SaragaOLM_Case2axon/0/SaragaOLM_Case2axon/v" scale="1mV" color="#000000" timeScale="1ms"/>
-            <Line id="OLM dend4[0].v(0.75)" quantity="Pop_SaragaOLM_Case2axon/0/SaragaOLM_Case2axon/38/v" scale="1mV" color="#FF0000" timeScale="1ms"/>
-            <Line id="OLM dend2[1].v(0.5)" quantity="Pop_SaragaOLM_Case2axon/0/SaragaOLM_Case2axon/31/v" scale="1mV" color="#0000FF" timeScale="1ms"/>
+            <!-- <Line id="OLM dend4[0].v(0.75)" quantity="Pop_SaragaOLM_Case2axon/0/SaragaOLM_Case2axon/38/v" scale="1mV" color="#FF0000" timeScale="1ms"/>
+            <Line id="OLM dend2[1].v(0.5)" quantity="Pop_SaragaOLM_Case2axon/0/SaragaOLM_Case2axon/31/v" scale="1mV" color="#0000FF" timeScale="1ms"/> -->
         </Display>
     
         <OutputFile id="of0" fileName="saragaolm.dat">

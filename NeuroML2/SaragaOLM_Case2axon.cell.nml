@@ -12,7 +12,7 @@
     <include href="Kaxon.channel.nml"/>
     <include href="IA.channel.nml"/>
     <include href="Ih.channel.nml"/>
-    <include href="andras.channel.nml"/>
+    <include href="leak_chan.channel.nml"/>
 
   <cell id="SaragaOLM_Case2axon">
       
@@ -1946,7 +1946,7 @@
 
       <membraneProperties> 
      
-        <channelDensity ionChannel="andras" id="leak_all" condDensity="0.05mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/> <!-- 0.05 -->
+        <channelDensity ionChannel="leak_chan" id="leak_chan_all" condDensity="0.05mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/> <!-- 0.05 -->
 
         <channelDensity ionChannel="IA" id="IA_soma_group" condDensity="16.5mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> <!-- 16.5 -->
 
