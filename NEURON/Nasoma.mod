@@ -43,8 +43,7 @@ UNITS {
 NEURON {
         SUFFIX Nasoma
         USEION na READ ena WRITE ina
-        NONSPECIFIC_CURRENT il
-        RANGE gnasoma, gl, el, ina
+        RANGE gnasoma, ina
         GLOBAL minf, hinf, hexp, mtau, htau
 }
  
@@ -56,8 +55,6 @@ PARAMETER {
         dt (ms)
         gnasoma = .0107 (mho/cm2)
         ena = 90 (mV)
-        gl = .00005 (mho/cm2)
-        el = -70 (mV)
 }
  
 STATE {
@@ -66,7 +63,6 @@ STATE {
  
 ASSIGNED {
         ina (mA/cm2)
-        il (mA/cm2)
         minf 
 	mexp 
 	hinf 
@@ -84,7 +80,6 @@ INITIAL {
 BREAKPOINT {
         SOLVE states
 	ina = gnasoma*minf*minf*minf*h*(v - ena)    
-        il = gl*(v - el)
 }
 
 PROCEDURE states() {	:exact when v held constant

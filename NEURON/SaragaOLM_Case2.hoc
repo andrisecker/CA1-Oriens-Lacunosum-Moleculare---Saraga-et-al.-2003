@@ -446,24 +446,22 @@ proc biophys() {
     cm = 1.3
   }
   forsec Soma {
+    insert leak
     insert Ksoma
       gksoma_Ksoma = 0.0319
     insert Nasoma
       gnasoma_Nasoma = 0.0107
-      gl_Nasoma = 5e-05
-      el_Nasoma = -70
     insert IA
       gkAbar_IA = 0.0165
     insert Ih
       gkhbar_Ih = 0.001385
   }
   forsec Dendrites {
+    insert leak
     insert Kdend
       gkdend_Kdend = 0.023
     insert Nadend
       gnadend_Nadend = 0.0117
-      gl_Nadend = 5e-05
-      el_Nadend = -70
   }
 }
 

@@ -43,9 +43,8 @@ UNITS {
 NEURON {
         SUFFIX Nadend
         USEION na READ ena WRITE ina
-        NONSPECIFIC_CURRENT il
         RANGE gnadend, gl, el, ina
-        GLOBAL minf, hinf, hexp, mtau, htau
+        GLOBAL m, minf, hinf, hexp, mtau, htau
 }
  
 INDEPENDENT {t FROM 0 TO 1 WITH 1 (ms)}
@@ -56,17 +55,15 @@ PARAMETER {
         dt (ms)
         gnadend = .0117 (mho/cm2)
         ena = 90 (mV)
-        gl = .00005 (mho/cm2)
-        el = -70 (mV)
 }
  
 STATE {
-        m h 
+        h 
 }
  
 ASSIGNED {
         ina (mA/cm2)
-        il (mA/cm2)
+        m
         minf 
 	mexp 
 	hinf 
@@ -82,12 +79,11 @@ INITIAL {
 }
 
 BREAKPOINT {
-        SOLVE states
-	ina = gnadend*minf*minf*minf*h*(v - ena)    
-        il = gl*(v - el)
+        SOLVE state
+	    ina = gnadend*minf*minf*minf*h*(v - ena)    
 }
 
-PROCEDURE states() {	:exact when v held constant
+PROCEDURE state() {	:exact when v held constant
 	evaluate_fct(v)
 	h = h + hexp*(hinf - h)
 	VERBATIM

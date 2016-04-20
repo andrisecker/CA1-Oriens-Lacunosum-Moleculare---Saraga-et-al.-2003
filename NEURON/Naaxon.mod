@@ -46,8 +46,7 @@ UNITS {
 NEURON {
         SUFFIX Naaxon
         USEION na READ ena WRITE ina
-        NONSPECIFIC_CURRENT il
-        RANGE gnaaxon, gl, el, ina
+        RANGE gnaaxon, ina
         GLOBAL minf, hinf, hexp, mtau, htau
 }
  
@@ -59,8 +58,6 @@ PARAMETER {
         dt (ms)
         gnaaxon = .0107 (mho/cm2)
         ena = 90 (mV)
-        gl = .00005 (mho/cm2)
-        el = -70 (mV)
 }
  
 STATE {
@@ -69,7 +66,6 @@ STATE {
  
 ASSIGNED {
         ina (mA/cm2)
-        il (mA/cm2)
         minf 
 	mexp 
 	hinf 
@@ -79,6 +75,7 @@ ASSIGNED {
 }
  
 INITIAL {
+    evaluate_fct(v)
 	m = minf
 	h = hinf
 }
@@ -86,7 +83,6 @@ INITIAL {
 BREAKPOINT {
         SOLVE states
 	ina = gnaaxon*minf*minf*minf*h*(v - ena)    
-        il = gl*(v - el)
 }
 
 PROCEDURE states() {	:exact when v held constant

@@ -452,7 +452,7 @@ proc geom() {
 proc biophys() {
 
   forall {
-  nseg = L/10+1
+    nseg = L/10+1   
   }
 
   forsec all {
@@ -461,34 +461,32 @@ proc biophys() {
   }
 
   forsec Soma {
+    insert leak
     insert Ksoma
       gksoma_Ksoma = 0.0319
     insert Nasoma
       gnasoma_Nasoma = 0.0107
-      gl_Nasoma = 5e-05
-      el_Nasoma = -70
     insert IA
       gkAbar_IA = 0.0165
     insert Ih
       gkhbar_Ih = 0.001385
+    insert h_ion eh = -32.9
   }
 
   forsec Dendrites {
+    insert leak
     insert Kdend
       gkdend_Kdend = 0.023
     insert Nadend
       gnadend_Nadend = 0.0117
-      gl_Nadend = 5e-05
-      el_Nadend = -70
   }
 
   forsec Axon {
+    insert leak
     insert Kaxon
-	gkaxon_Kaxon = 0.04785
+	  gkaxon_Kaxon = 0//0.04785
     insert Naaxon
-	gnaaxon_Naaxon = 0.01605
-	gl_Naaxon = 5e-05
-	el_Naaxon = -70
+	  gnaaxon_Naaxon = 0//0.01605
   }	
 }
 
