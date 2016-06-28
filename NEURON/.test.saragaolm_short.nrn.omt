@@ -1,9 +1,9 @@
-target: tester_Case2.hoc
+target: tester_Case2_short.hoc
 engine: NEURON
 mep: ../.test.saragaolm.mep
 
 experiments:
-  current clamp case2 long:
+  current clamp case2 short:
     observables:
       spike times:
         file:
