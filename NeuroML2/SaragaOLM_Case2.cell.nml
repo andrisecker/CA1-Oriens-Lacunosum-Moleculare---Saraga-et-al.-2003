@@ -1896,24 +1896,16 @@
 
       <membraneProperties> 
           
-        <channelDensity ionChannel="leak_chan" id="leak_chan_all" condDensity="0.05mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/> <!-- 0.05 -->
-
-        <channelDensity ionChannel="IA" id="IA_soma_group" condDensity="16.5mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> <!-- 16.5 -->
-
-        <channelDensity ionChannel="Ih" id="Ih_soma_group" condDensity="1.385mS_per_cm2" segmentGroup="soma_group"  erev="-32.9mV" ion="h"/> <!-- 1.385 -->
-
-        <channelDensity ionChannel="Kdend" id="Kdend_dendrite_group" condDensity="23mS_per_cm2" segmentGroup="dendrite_group"  erev="-100mV" ion="k"/> <!-- 23 -->
-
-        <channelDensity ionChannel="Ksoma" id="Ksoma_soma_group" condDensity="31.9mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> <!-- 31.9 -->
-
-        <channelDensity ionChannel="Nadend" id="Nadend_dendrite_group" condDensity="11.7mS_per_cm2" segmentGroup="dendrite_group"  erev="90mV" ion="na"/> <!-- 11.7 -->        
-
-        <channelDensity ionChannel="Nasoma" id="Nasoma_soma_group" condDensity="10.7mS_per_cm2" segmentGroup="soma_group"  erev="90mV" ion="na"/> <!-- 10.7 -->
+        <channelDensity ionChannel="leak_chan" id="leak_chan_all" condDensity="0.05mS_per_cm2" segmentGroup="all"  erev="-70mV" ion="non_specific"/> 
+        <channelDensity ionChannel="IA" id="IA_soma_group" condDensity="16.5mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/> 
+        <channelDensity ionChannel="Ih" id="Ih_soma_group" condDensity="1.385mS_per_cm2" segmentGroup="soma_group"  erev="-32.9mV" ion="h"/> 
+        <channelDensity ionChannel="Kdend" id="Kdend_dendrite_group" condDensity="23mS_per_cm2" segmentGroup="dendrite_group"  erev="-100mV" ion="k"/> 
+        <channelDensity ionChannel="Ksoma" id="Ksoma_soma_group" condDensity="31.9mS_per_cm2" segmentGroup="soma_group"  erev="-100mV" ion="k"/>
+        <channelDensity ionChannel="Nadend" id="Nadend_dendrite_group" condDensity="11.7mS_per_cm2" segmentGroup="dendrite_group"  erev="90mV" ion="na"/>       
+        <channelDensity ionChannel="Nasoma" id="Nasoma_soma_group" condDensity="10.7mS_per_cm2" segmentGroup="soma_group"  erev="90mV" ion="na"/> 
         
         <spikeThresh value="0 mV"/>
-
-        <specificCapacitance  value="1.3 uF_per_cm2" />
-        
+        <specificCapacitance  value="1.3 uF_per_cm2" />     
         <initMembPotential value="-73.0 mV"/>
 
       </membraneProperties> 

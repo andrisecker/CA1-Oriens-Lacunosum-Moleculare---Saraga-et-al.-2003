@@ -6,8 +6,9 @@
     
     <include href="SaragaOLM_Case2.cell.nml"/>
 
-    <!-- Point process: Current clamp -->  
-    <pulseGenerator id="IClamp0" delay="0ms" duration="200ms" amplitude="0.1nA"/>
+    <!-- Point process: Current clamp -->     
+    <pulseGenerator id="IClamp0" delay="0ms" duration="500ms" amplitude="-0.05nA" />
+    <pulseGenerator id="IClamp1" delay="400ms" duration="0.1ms" amplitude="10nA" />
     
     <!-- Create a single-cell network -->
 
@@ -21,6 +22,9 @@
 
         <inputList id="IClamp0" component="IClamp0" population="Pop_SaragaOLM_Case2">
             <input id="0" target="../Pop_SaragaOLM_Case2/0/SaragaOLM_Case2" destination="synapses"/>
+        </inputList>
+        <inputList id="IClamp1" component="IClamp1" population="Pop_SaragaOLM_Case2">
+            <input id="1" target="../Pop_SaragaOLM_Case2/0/SaragaOLM_Case2" destination="synapses"/>
         </inputList>
 
         

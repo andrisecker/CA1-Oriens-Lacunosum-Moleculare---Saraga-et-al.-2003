@@ -1,17 +1,17 @@
-target: LEMS_SaragaOLM_Case2.xml
+target: LEMS_SaragaOLM_Case2_short.xml
 engine: jNeuroML_NEURON
 mep: ../.test.saragaolm.mep
 
 experiments:
-  current clamp case2 long:
+  current clamp case2 short:
     observables:
       spike times:
         file:
-          path: saragaolm.dat
+          path: saragaolm_short.dat
           columns: [0, 1]
           scaling: [1000, 1000]
         spike detection:
           method: threshold
           threshold: 0
-        tolerance: 0.02
+        tolerance: 0.0035
 
