@@ -456,12 +456,12 @@ proc biophys() {
   }
 
   forsec all {
+    insert leak
     Ra = 150
     cm = 1.3
   }
 
   forsec Soma {
-    insert leak
     insert Ksoma
       gksoma_Ksoma = 0.0319
     insert Nasoma
@@ -474,7 +474,6 @@ proc biophys() {
   }
 
   forsec Dendrites {
-    insert leak
     insert Kdend
       gkdend_Kdend = 0.023
     insert Nadend
@@ -482,11 +481,10 @@ proc biophys() {
   }
 
   forsec Axon {
-    insert leak
     insert Kaxon
-	  gkaxon_Kaxon = 0//0.04785
+	  gkaxon_Kaxon = 0.04785
     insert Naaxon
-	  gnaaxon_Naaxon = 0//0.01605
+	  gnaaxon_Naaxon = 0.01605
   }	
 }
 
