@@ -5,7 +5,7 @@
 
     <ionChannel id="Ih" conductance="13.85pS" type="ionChannelHH" species="h">
         
-        <notes>Ih channel description (from Zhang and McBain 1995, Martina 1998, Warman 1994 - modeled by Skinner lab 2003)</notes>
+        <notes>hyperpolarization-activated nonspecific Na+ and K+ channel description (from Maccaferri and McBain 1996, Maccaferri 1993, Pape 1996, Magee 1998 - modeled by Skinner lab 2003)</notes>
         
         <gateHHtauInf id="r" instances="1">
             <timeCourse type="Saraga2003_Ih_tau"/>
