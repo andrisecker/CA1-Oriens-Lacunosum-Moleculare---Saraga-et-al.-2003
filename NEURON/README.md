@@ -7,9 +7,9 @@ Issues fixed:
 
 To run the scripts, [install NEURON](https://www.neuron.yale.edu/neuron/download) and run:
 
-    git clone https://github.com/andrisecker/CA1-Oriens-Lacunosum-Moleculare---Saraga-et-al.-2003.git  # clone git repository
-    cd CA1-Oriens-Lacunosum-Moleculare---Saraga-et-al.-2003/NEURON
+    git clone https://github.com/andrisecker/Saraga2003-CA1-OLM.git  # clone git repository
+    cd Saraga2003-CA1-OLM/NEURON
     nrnivmodl  # compile .mod files
     nrngui tester_Case2.hoc  # runs a simulation (single cell, current clamp) and saves data into saragaolm.dat
 
-![](https://raw.githubusercontent.com/andrisecker/CA1-Oriens-Lacunosum-Moleculare---Saraga-et-al.-2003/master/NEURON/saraga2003olm.png)
+![](https://raw.githubusercontent.com/andrisecker/Saraga2003-CA1-OLM/master/NEURON/saraga2003olm.png)

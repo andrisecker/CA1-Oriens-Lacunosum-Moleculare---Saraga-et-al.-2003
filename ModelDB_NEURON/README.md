@@ -6,8 +6,8 @@ These files are the original model scripts for use with the [NEURON simulator](h
 
 To run the scripts, [install NEURON](https://www.neuron.yale.edu/neuron/download) and run:
 
-    git clone https://github.com/andrisecker/CA1-Oriens-Lacunosum-Moleculare---Saraga-et-al.-2003.git # clone git repository
-    cd CA1-Oriens-Lacunosum-Moleculare---Saraga-et-al.-2003/ModelDB_NEURON
+    git clone https://github.com/andrisecker/Saraga2003-CA1-OLM.git # clone git repository
+    cd Saraga2003-CA1-OLM/ModelDB_NEURON
     nrnivmodl  # compile .mod files
     nrngui mosinit.hoc  # runs a simulation
     select a figure by clicking on a figure name
