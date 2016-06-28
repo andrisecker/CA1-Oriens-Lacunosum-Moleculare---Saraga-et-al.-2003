@@ -14,7 +14,11 @@ More details on the original NEURON version of this model [here](https://github.
 
 The model has been converted to NeuroML2/LEMS:
 
-More details on the NeuroML2/LEMS version of this model [here](![](https://raw.githubusercontent.com/andrisecker/Saraga2003-CA1-OLM/master/NeuroML2/compre.png)).
+[![Build Status](https://travis-ci.org/andrisecker/CA1-Oriens-Lacunosum-Moleculare---Saraga-et-al.-2003.svg?branch=master)](https://travis-ci.org/andrisecker/CA1-Oriens-Lacunosum-Moleculare---Saraga-et-al.-2003)
+
+More details on the NeuroML2/LEMS version of this model [here](https://github.com/andrisecker/Saraga2003-CA1-OLM/tree/master/NeuroML2).
+
+-------------------------------------------------------------------------------------------------------------------------------
 
 The NeuroML2 support is not 100%...
 we still have an issue with the m gate variable of the Na+ channels ([.mod file](https://github.com/andrisecker/Saraga2003-CA1-OLM/blob/master/NEURON/Nadend.mod), [.channel.nml file](https://github.com/andrisecker/Saraga2003-CA1-OLM/blob/master/NeuroML2/Nadend.channel.nml)) which is set to the inf value in the original files!
@@ -23,6 +27,4 @@ we still have an issue with the m gate variable of the Na+ channels ([.mod file]
 
 ![](https://raw.githubusercontent.com/andrisecker/Saraga2003-CA1-OLM/master/NeuroML2/compre.png)
 
--------------------------------------------------------------------------------------------------------------------------------
 
-[![Build Status](https://travis-ci.org/andrisecker/CA1-Oriens-Lacunosum-Moleculare---Saraga-et-al.-2003.svg?branch=master)](https://travis-ci.org/andrisecker/CA1-Oriens-Lacunosum-Moleculare---Saraga-et-al.-2003)
